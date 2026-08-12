@@ -1,6 +1,6 @@
 # Junior Business Analyst Portfolio
 
-Merhaba, ben **[Ad Soyad]**. İş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere ve test edilebilir çözümlere dönüştürmeye odaklanan Junior Business Analyst adayıyım.
+Merhaba, ben **Eren Sarıteke**. İş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere ve test edilebilir çözümlere dönüştürmeye odaklanan Junior Business Analyst adayıyım.
 
 Bu portföy; iş analizi yaklaşımımı, dokümantasyon becerilerimi ve SQL ile kullanıcı arayüzü çalışmalarımı vaka çalışmaları üzerinden gösterir. İçerikler portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
 
@@ -40,9 +40,9 @@ Bu portföy; iş analizi yaklaşımımı, dokümantasyon becerilerimi ve SQL ile
 
 ## İletişim
 
-- LinkedIn: [LinkedIn profil bağlantısı]
-- E-posta: [profesyonel e-posta adresi]
-- Konum: [Şehir, Ülke]
+- LinkedIn: Yakında eklenecek
+- E-posta: saritekeeren@gmail.com
+- Konum: Türkiye
 
 ---
 
