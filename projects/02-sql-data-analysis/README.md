@@ -1,22 +1,42 @@
-# SQL & Data Analysis — [Çalışma Adı]
+# ErenShop SQL ve Veri Doğrulama Çalışması
 
-Bu proje, SQL bilgisini yalnızca sorgu listesi olarak değil, iş kararına katkı sağlayan analiz şeklinde sunmak içindir.
+Bu çalışma, ErenShop eğitim ortamındaki SQL Server veritabanını inceleme ve API üzerinden yapılan ürün işlemlerini veritabanı seviyesinde doğrulama sürecimi gösterir.
 
-## Önerilen anlatı
+## İş amacı
 
-- **İş problemi:** [Karar verilmesi gereken konu]
-- **Veri seti:** [Kaynak, kapsam, satır sayısı; sentetik/anonim]
-- **Sorular:** [Yanıtlanan 3–5 iş sorusu]
-- **Yöntem:** JOIN, CTE, aggregate, window function vb.
-- **Bulgular:** [Verinin gösterdiği sonuçlar]
-- **Öneri:** [Paydaşa önerilen aksiyon]
+Ürün yönetimi API'sinde yapılan oluşturma, güncelleme ve pasife alma işlemlerinin veritabanına doğru yansıdığını kontrol etmek; API yanıtı ile kalıcı veri arasındaki tutarlılığı doğrulamak.
 
-## Dosya düzeni
+## Kapsam ve veri modeli
 
-- `01-business-context/`: Problem, kapsam ve KPI'lar
-- `02-data-model/`: ER diyagramı ve veri sözlüğü
-- `03-sql/`: Şema, örnek veri ve açıklamalı sorgular
-- `04-insights/`: Bulgular, tablo/grafikler ve öneriler
-- `05-validation/`: Veri kalite kontrolleri ve beklenen sonuçlar
+Çalışma; ürün, kategori, müşteri, sepet, sipariş ve ödeme tablolarından oluşan sentetik ErenShop veri setini kullanır. Teknik öğrenme altyapısı Ömer Gökdere tarafından sağlanmış, sorgular ve doğrulama adımları Eren Sarıteke tarafından uygulanmıştır.
 
-> Mevcut SQL dosyaları `03-sql/` altına eklenmeli; her sorgunun üstüne yanıtladığı iş sorusu ve sağladığı değer yazılmalıdır.
+- [Veri modeli özeti](../01-erenshop-business-analysis/07-database-sql/DATA-MODEL-OVERVIEW.md)
+- [Tablo oluşturma betiği](../01-erenshop-business-analysis/05-learning-platform/sql/02_create_tables.sql)
+- [Örnek veri betiği](../01-erenshop-business-analysis/05-learning-platform/sql/03_seed_data.sql)
+
+## Kullanılan SQL çalışmaları
+
+- [SELECT sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
+- [JOIN sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
+- [Raporlama sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/06_training_report_queries.sql)
+- [Eğitim tabloları](../01-erenshop-business-analysis/05-learning-platform/sql/08_training_tables.sql)
+- [İş talepleri için örnek veriler](../01-erenshop-business-analysis/05-learning-platform/sql/09_seed_business_requests.sql)
+
+## Uygulanan doğrulama senaryosu
+
+1. Postman üzerinden test ürünü oluşturuldu ve API `201 Created` yanıtı verdi.
+2. Ürünün fiyat ve stok bilgileri güncellendi ve API `200 OK` yanıtı verdi.
+3. Ürün DELETE isteğiyle fiziksel olarak silinmeden pasife alındı.
+4. SQL Server üzerinde ilgili kaydın `IsActive = 0` olduğu doğrulandı.
+5. Aynı ürün API üzerinden yeniden istendiğinde `404 Not Found` döndüğü kontrol edildi.
+
+## Sonuç ve iş değeri
+
+Bu kontrol, yalnızca HTTP durum kodunun değil, veritabanındaki gerçek durumun da test edilmesini sağladı. Soft-delete iş kuralının beklendiği gibi çalıştığı ve pasif ürünün müşteriye sunulmadığı doğrulandı.
+
+- [Ayrıntılı test sonuçları](../01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
+- [SQL doğrulama ekranı](../01-erenshop-business-analysis/09-test-cases-uat/evidence/07-soft-delete-sql-proof.png)
+
+## Kullanılan araçlar
+
+`SQL Server` · `SSMS` · `Postman` · `REST API` · `Swagger`
