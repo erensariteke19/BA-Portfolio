@@ -40,14 +40,20 @@ ErenShop müşterileri siparişlerini sistem üzerinden iptal edemediği için d
 
 ## BA çıktıları
 
+- [Business case ve fayda ölçüm planı](business-case.md)
+- [Paydaş analizi ve RACI](stakeholder-raci.md)
+- [MVP backlog ve MoSCoW önceliklendirme](backlog-prioritization.md)
+- [Değişiklik etki analizi](change-impact-analysis.md)
 - [AS-IS / TO-BE ve uçtan uca süreçler](process-flows.md)
 - [Fonksiyonel ve fonksiyonel olmayan gereksinimler](requirements.md)
 - [User stories ve Gherkin kabul kriterleri](user-stories.md)
 - [Use case ve iş kuralları](use-case.md)
 - [Mantıksal veri modeli](data-model.md)
+- [API sözleşmesi](api-contract.md)
 - [Test ve UAT senaryoları](test-cases-uat.md)
 - [Requirements Traceability Matrix](traceability-matrix.md)
 - [Riskler, varsayımlar ve açık sorular](risks-and-decisions.md)
+- [Release, UAT ve operasyonel kabul planı](release-uat-plan.md)
 - [Sipariş iptal ekran taslağı](wireframes/order-cancellation-wireframe.svg)
 - [Profesyonel Word dokümanı](../10-original-documents/02-siparis-iptal-analizi-profesyonel.docx)
 
@@ -59,3 +65,5 @@ ErenShop müşterileri siparişlerini sistem üzerinden iptal edemediği için d
 - Refund başlatma hatalarının izlenebilir olması ve operasyon kuyruğuna düşmesi
 
 Bu hedefler vaka çalışması için önerilmiştir; gerçek üretim verisiyle doğrulanmış sonuçlar değildir.
+
+Hedeflerin baseline, veri kaynağı, sahip ve 30/60/90 günlük fayda doğrulama yöntemi [business-case.md](business-case.md) içinde tanımlanmıştır.
