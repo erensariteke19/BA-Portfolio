@@ -1,20 +1,20 @@
 # ErenShop EDU — BA, SQL ve API Öğrenme Projesi
 
-ErenShop EDU; gerçekçi bir e-ticaret sistemi üzerinden iş analizi, SQL, REST API ve API testi becerilerini geliştirmek için hazırlanmış uygulamalı bir eğitim projesidir.
+ErenShop EDU; e-ticaret sipariş, ürün, müşteri, sepet ve ödeme alanlarını kapsayan; iş analizi, SQL Server, REST API ve Postman çalışmalarını aynı çözüm bağlamında gösteren uygulamalı bir portföy projesidir.
 
-Platform ve eğitim altyapısı **Ömer Gökdere** tarafından geliştirilmiş, dört uçtan uca iş analizi vaka çalışması **Eren Sarıteke** tarafından hazırlanmıştır. Kaynakların bu portföyde yayımlanması Ömer Gökdere'nin izniyle yapılmıştır. Ayrıntılı rol dağılımı için [CREDITS.md](CREDITS.md) dosyasına bakabilirsiniz.
+Bu bölümdeki dört uçtan uca BA vaka çalışması, ileri SQL analizleri, API/SQL doğrulamaları ve kurumsal teslim dokümanları Eren Sarıteke'nin portföy çalışmalarıdır. Kullanılan eğitim altyapısının kaynak ve yayın izni bilgisi [CREDITS.md](CREDITS.md) dosyasında tutulur.
 
 ## Proje bileşenleri
 
-| Bileşen | İçerik | Katkı / sahiplik |
+| Bileşen | Teknik içerik | Portföyde gösterilen yetkinlik |
 |---|---|---|
-| İş analizi vaka çalışmaları | Gereksinim, süreç, veri modeli, kabul kriterleri ve testler | Eren Sarıteke |
-| Eğitim platformu | FastAPI backend ve web arayüzü | Ömer Gökdere |
-| SQL altyapısı | SQL Server şema, örnek veri ve eğitim sorguları | Ömer Gökdere tarafından sağlanan öğrenme ortamı |
-| API test altyapısı | Postman collection/environment ve Swagger destekli API | Ömer Gökdere tarafından sağlanan öğrenme ortamı |
-| Uygulamalı öğrenme | Platformu inceleme, BA senaryoları ve SQL/API pratiği | Eren Sarıteke |
+| İş analizi vaka çalışmaları | Business case, süreç, gereksinim, backlog, veri modeli, RTM ve UAT | Uçtan uca BA teslimi |
+| REST API katmanı | FastAPI route/schema/service yapısı ve Swagger | Sistem ve entegrasyon analizi |
+| SQL katmanı | SQL Server ilişkisel şema, sentetik veri ve ileri analiz sorguları | Veri analizi ve iş içgörüsü |
+| API test katmanı | Postman collection/environment ve API–DB kontrolleri | Contract, negatif test ve mutabakat |
+| Kullanıcı deneyimi | Wireframe ve UI fonksiyonel spesifikasyonu | Gereksinimden ekrana izlenebilirlik |
 
-## Benim rolüm
+## Uyguladığım analiz kapsamı
 
 - İş problemini ve kapsamı tanımlamak
 - Mevcut durumu ve etkilenen modülleri analiz etmek
@@ -99,9 +99,9 @@ Platform kaynakları [05-learning-platform](05-learning-platform/README-PORTFOLI
 
 Yerel `.env`, sanal ortam, cache dosyaları ve yüklenen kullanıcı belgeleri bilerek dahil edilmemiştir.
 
-## Şeffaflık notu
+## Kanıt ve kaynak notu
 
-Bu repo ortak çalışmayı rollerine göre sunar; platform geliştirme emeği Ömer Gökdere'ye, dört BA vaka çalışması Eren Sarıteke'ye aittir. Referans/örnek olarak sağlanan “Favori Ürünler Listesi” dokümanı kişisel çalışma olarak dahil edilmemiştir. SQL ve Postman kaynakları platformun öğrenme altyapısıdır; Eren'in bizzat çalıştırdığı sorgular ve API testleri ayrı bir sonuç raporunda kanıtlarıyla işaretlenmiştir.
+Çalıştırılan SQL/API testleri tarihli sonuç raporu ve ekran kanıtlarıyla işaretlenir; tasarım seviyesindeki UAT ve hedef mimari çıktıları ayrıca belirtilir. Böylece uygulanmış doğrulamalar ile önerilen çözüm tasarımı birbirine karıştırılmaz. Eğitim platformunun kaynak bilgisi yalnızca [CREDITS.md](CREDITS.md) dosyasında açıklanır.
 
 ## Çalıştırılmış API ve SQL kanıtları
 
