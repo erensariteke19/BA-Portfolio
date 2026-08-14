@@ -58,6 +58,11 @@ Platform ve eğitim altyapısı **Ömer Gökdere** tarafından geliştirilmiş, 
 - Requirements Traceability Matrix
 - Risk/karar kaydı, API test planı ve SQL analiz planı
 - Sipariş iptal modalı wireframe'i
+- Business case, KPI/baseline yaklaşımı ve seçenek analizi
+- Paydaş haritası, RACI ve iletişim planı
+- MoSCoW öncelikli MVP backlog ile Definition of Ready/Done
+- Değişiklik etki analizi ve API sözleşmesi
+- Release, UAT, go/no-go ve yayın sonrası izleme planı
 - Düzenlenmiş profesyonel Word sürümü
 
 ## Profesyonel Word sürümleri
@@ -104,9 +109,10 @@ Bu repo ortak çalışmayı rollerine göre sunar; platform geliştirme emeği �
 
 [Test sonuçlarını ve 8 ekran kanıtını incele](09-test-cases-uat/API-SQL-TEST-RESULTS.md)
 
-## Geliştirme fırsatları
+[Kurumsal API test yaklaşımını incele](09-test-cases-uat/API-TEST-STRATEGY.md): contract, iş kuralı, negatif/güvenlik, API–DB mutabakatı, veri yönetimi, assertion ve CI hedefi.
 
-- Metinlerdeki yazım ve terminoloji tutarlılığını iyileştirmek
-- Süreçleri BPMN/flowchart görsellerine dönüştürmek
-- Gereksinim–kabul kriteri–test eşleşmesini tam matrise taşımak
-- Negatif API senaryolarını ve otomatik Postman assertion'larını genişletmek
+## Kurumsal teslim standardı
+
+Öne çıkan sipariş iptali vakası yalnızca analiz metni değil; problemden fayda ölçümüne ve release kararına uzanan bir BA teslim paketidir. Gereksinimler benzersiz kimliklerle yönetilir, backlog önceliklendirilir, karar/risk sahipleri belirlenir, çözüm API ve veri seviyesinde tarif edilir, test kapsamı RTM ile izlenir ve yayın kapıları tanımlanır.
+
+Tasarlanan ancak çalıştırılmayan UAT senaryoları ile gerçekten çalıştırılmış API/SQL testleri açıkça ayrılmıştır. Bu ayrım, kanıt seviyesini doğru sunmak ve portföyde yanıltıcı sonuç iddiasından kaçınmak için korunur.
