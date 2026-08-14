@@ -24,7 +24,7 @@ ErenShop öğrenme ortamında mağaza, API/SQL dokümantasyonu ve BA eğitim ekr
 - [Dokümantasyon ekranı](../01-erenshop-business-analysis/05-learning-platform/frontend/docs.html)
 - [Arayüz kaynakları](../01-erenshop-business-analysis/05-learning-platform/frontend/)
 
-Teknik platform ve çalışan arayüz Ömer Gökdere tarafından geliştirilmiştir. Bu portföydeki iş analizi senaryoları, gereksinimler, kabul kriterleri ve dört wireframe Eren Sarıteke'nin çalışmalarıdır.
+Bu portföyde iş analizi senaryoları, gereksinimler, kabul kriterleri, dört wireframe ve UI fonksiyonel spesifikasyonu Eren Sarıteke tarafından hazırlanmıştır. Çalışan eğitim arayüzünün kaynak bilgisi proje [CREDITS](../01-erenshop-business-analysis/CREDITS.md) dosyasında yer alır.
 
 ## Gereksinimden ekrana yaklaşım
 
