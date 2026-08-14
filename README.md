@@ -4,6 +4,10 @@ Merhaba, ben **Eren Sarıteke**. İş ihtiyaçlarını anlaşılır gereksinimle
 
 Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, wireframe ve UAT çalışmalarımı gerçek çalışma kanıtlarıyla sunar. İçerikler eğitim ve portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
 
+Güncel Business Analyst ilanlarında aranan SQL, API/entegrasyon, Jira/Confluence, Agile, BPMN/UML, UAT, change impact, KPI ve paydaş yönetimi yetkinliklerinin portföy kanıtlarıyla eşleşmesi için [İş İlanı Yetkinlik Matrisi](JOB-MARKET-ALIGNMENT.md) hazırlanmıştır.
+
+> **English snapshot:** I translate business needs into traceable requirements, process and integration models, prioritized backlogs, SQL insights, API/UAT test scenarios and measurable release outcomes.
+
 ## Öne çıkan çalışmalar
 
 | Çalışma | Odak | Kanıtlar |
@@ -23,6 +27,9 @@ Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, 
 - SQL Server, veri modeli ve veri doğrulama
 - REST API, Swagger ve Postman testleri
 - Wireframe, test case, UAT ve gereksinim izlenebilirliği
+- Jira/Confluence uyumlu Agile backlog ve delivery artifacts
+- BPMN/UML, REST contract, sistem entegrasyonu ve veri akışı
+- KPI sözlüğü, dashboard gereksinimi ve veri kalite kontrolleri
 
 ## Doğrulanmış uygulama çalışması
 
