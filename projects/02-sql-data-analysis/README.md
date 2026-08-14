@@ -10,7 +10,7 @@ Bu vaka çalışması, SQL'i yalnızca veri listelemek için değil; satış per
 | Veritabanı | Microsoft SQL Server / ErenShopDB |
 | Veri | Eğitim amacıyla hazırlanmış sentetik veri seti |
 | Rolüm | İş sorularını tanımlama, sorguları çalıştırma, API–veritabanı tutarlılığını doğrulama ve analiz paketini hazırlama |
-| Teknik altyapı | Ömer Gökdere tarafından sağlanan ErenShop öğrenme ortamı |
+| Teknik bağlam | ErenShop SQL Server şeması ve sentetik e-ticaret verisi |
 
 ## Yanıtlanan iş soruları
 
