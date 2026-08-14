@@ -1,22 +1,39 @@
-# React/UI Prototype — [Uygulama Adı]
+# ErenShop UI Prototipleri ve Wireframe'ler
 
-Bu proje, mevcut React/UI çalışmasını bir BA vaka çalışmasının çalışan prototipi olarak sunmak içindir.
+Bu bölüm, iş gereksinimlerini kullanıcı akışlarına ve ekran taslaklarına dönüştürme çalışmalarımı gösterir. Repodaki çalışan eğitim arayüzü React değil; **HTML, CSS ve JavaScript** kullanılarak geliştirilmiştir.
 
-## Önerilen anlatı
+## Kullanıcı problemi
 
-- **Kullanıcı problemi:** [Kimin hangi problemi çözülüyor?]
-- **Gereksinimler:** [Ekranın karşıladığı FR/US/AC kimlikleri]
-- **Kullanıcı akışı:** [Başlangıçtan hedefe adımlar]
-- **Tasarım kararları:** [Neden bu düzen/etkileşim?]
-- **Doğrulama:** [Acceptance criteria ve test sonucu]
+E-ticaret müşterilerinin sipariş iptali, abonelik oluşturma, sipariş notu ekleme ve ürün görsellerini yönetme işlemlerini anlaşılır ve kontrollü ekranlar üzerinden tamamlaması gerekir.
 
-## Dosya düzeni
+## Hazırlanan wireframe'ler
 
-- `01-requirements/`: İlgili gereksinimler, user stories ve kabul kriterleri
-- `02-user-flow/`: Kullanıcı akışı
-- `03-wireframes/`: İlk ekran taslakları
-- `04-ui/`: Son tasarım ve ekran görüntüleri
-- `05-application/`: Mevcut React kaynak kodu
-- `06-test-evidence/`: Test sonuçları ve UAT notları
+| İş ihtiyacı | Ekran taslağı | İlgili analiz |
+|---|---|---|
+| Müşterinin uygun siparişi kendi iptal etmesi | [Sipariş iptal modalı](../01-erenshop-business-analysis/featured-case-study/wireframes/order-cancellation-wireframe.svg) | [Sipariş iptali vaka çalışması](../01-erenshop-business-analysis/featured-case-study/README.md) |
+| Tekrarlanan sipariş için abonelik oluşturma | [Abonelik ödeme ekranı](../01-erenshop-business-analysis/case-studies/01-subscription-order/wireframes/subscription-checkout.svg) | [Abonelik siparişi analizi](../01-erenshop-business-analysis/case-studies/01-subscription-order/README.md) |
+| Siparişe teslimat notu ekleme | [Sipariş notu ekranı](../01-erenshop-business-analysis/case-studies/02-order-note/wireframes/order-note-checkout.svg) | [Sipariş notu analizi](../01-erenshop-business-analysis/case-studies/02-order-note/README.md) |
+| Ürün görsellerini kontrollü yönetme | [Ürün görseli yöneticisi](../01-erenshop-business-analysis/case-studies/03-product-images/wireframes/product-image-manager.svg) | [Ürün görseli analizi](../01-erenshop-business-analysis/case-studies/03-product-images/README.md) |
 
-> React projesini eklerken gizli anahtarları ve `.env` dosyasını dahil etmeyin. Kurulum adımlarını, kullanılan teknolojileri ve demo bağlantısını bu README'ye ekleyin.
+## Çalışan eğitim arayüzü
+
+ErenShop öğrenme ortamında mağaza, API/SQL dokümantasyonu ve BA eğitim ekranları bulunur:
+
+- [Mağaza ekranı](../01-erenshop-business-analysis/05-learning-platform/frontend/index.html)
+- [Eğitim ekranı](../01-erenshop-business-analysis/05-learning-platform/frontend/training.html)
+- [Dokümantasyon ekranı](../01-erenshop-business-analysis/05-learning-platform/frontend/docs.html)
+- [Arayüz kaynakları](../01-erenshop-business-analysis/05-learning-platform/frontend/)
+
+Teknik platform ve çalışan arayüz Ömer Gökdere tarafından geliştirilmiştir. Bu portföydeki iş analizi senaryoları, gereksinimler, kabul kriterleri ve dört wireframe Eren Sarıteke'nin çalışmalarıdır.
+
+## Gereksinimden ekrana yaklaşım
+
+1. Kullanıcı rolü, hedefi ve mevcut problemi tanımlandı.
+2. Ana ve alternatif kullanıcı akışları çıkarıldı.
+3. İş kuralları ile doğrulama mesajları belirlendi.
+4. Gereksinimler ve kabul kriterleri ekran bileşenleriyle eşleştirildi.
+5. Wireframe'ler ilgili vaka dokümanlarına bağlandı.
+
+## Kullanılan araçlar
+
+`Wireframe` · `SVG` · `HTML` · `CSS` · `JavaScript` · `GitHub`
