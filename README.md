@@ -1,6 +1,6 @@
-# Junior Business Analyst Portfolio
+# İş Analizi Uzman Yardımcısı | BT ve Teknik İş Analizi | SQL
 
-Merhaba, ben **Eren Sarıteke**. İş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere ve test edilebilir çözümlere dönüştürmeye odaklanan Junior Business Analyst adayıyım.
+Merhaba, ben **Eren Sarıteke**. İş Analizi Uzman Yardımcısı olarak iş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere, veriyle desteklenen içgörülere ve test edilebilir teknik çözümlere dönüştürmeye odaklanıyorum.
 
 Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, wireframe ve UAT çalışmalarımı gerçek çalışma kanıtlarıyla sunar. İçerikler eğitim ve portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
 
