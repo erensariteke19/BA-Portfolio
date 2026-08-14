@@ -2,7 +2,7 @@
 
 ErenShop EDU; e-ticaret sipariş, ürün, müşteri, sepet ve ödeme alanlarını kapsayan; iş analizi, SQL Server, REST API ve Postman çalışmalarını aynı çözüm bağlamında gösteren uygulamalı bir portföy projesidir.
 
-Bu bölümdeki dört uçtan uca BA vaka çalışması, ileri SQL analizleri, API/SQL doğrulamaları ve kurumsal teslim dokümanları Eren Sarıteke'nin portföy çalışmalarıdır. Kullanılan eğitim altyapısının kaynak ve yayın izni bilgisi [CREDITS.md](CREDITS.md) dosyasında tutulur.
+Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL doğrulamaları ve kurumsal teslim dokümanları Eren Sarıteke'nin portföy çalışmalarıdır. Kullanılan eğitim altyapısının kaynak ve yayın izni bilgisi [CREDITS.md](CREDITS.md) dosyasında tutulur.
 
 ## Proje bileşenleri
 
@@ -32,7 +32,7 @@ Bu bölümdeki dört uçtan uca BA vaka çalışması, ileri SQL analizleri, API
 | Sipariş notu | Siparişe özel teslimat bilgisinin aktarılamaması | Validasyon, güvenlik, karakter sınırı kararı ve kargo etiketi | [Vaka paketini incele](case-studies/02-order-note/README.md) |
 | Ürün görseli yönetimi | Ürün görsellerinin standart ve kontrollü yönetilememesi | Dosya doğrulama, görsel limiti, resize, kapak görseli ve veri modeli | [Vaka paketini incele](case-studies/03-product-images/README.md) |
 
-[Dört vaka çalışmasını karşılaştır](case-studies/README.md)
+[Vaka çalışmalarını karşılaştır](case-studies/README.md)
 
 ## Üretilen BA çıktıları
 
@@ -52,9 +52,9 @@ Bu bölümdeki dört uçtan uca BA vaka çalışması, ileri SQL analizleri, API
 
 - AS-IS / TO-BE süreçleri ve sipariş durum diyagramı
 - Ölçülebilir functional/non-functional requirements
-- Altı user story ve Gherkin acceptance criteria
+- User story seti ve Gherkin acceptance criteria
 - Use case, iş kuralları ve mantıksal ER modeli
-- 10 test senaryosu ve üç UAT senaryosu
+- Fonksiyonel, negatif ve UAT test senaryoları
 - Requirements Traceability Matrix
 - Risk/karar kaydı, API test planı ve SQL analiz planı
 - Sipariş iptal modalı wireframe'i
@@ -111,7 +111,7 @@ Yerel `.env`, sanal ortam, cache dosyaları ve yüklenen kullanıcı belgeleri b
 
 Ürün listeleme, arama, detay görüntüleme, oluşturma, güncelleme ve pasife alma akışları Postman üzerinden çalıştırıldı. Pasife alma davranışı SQL Server üzerinde `IsActive=0` sonucu ile ayrıca doğrulandı. Pasif ürünün API tarafından `404 Not Found` ile gizlendiği negatif senaryoda kontrol edildi.
 
-[Test sonuçlarını ve 8 ekran kanıtını incele](09-test-cases-uat/API-SQL-TEST-RESULTS.md)
+[Test sonuçlarını ekran kanıtlarıyla incele](09-test-cases-uat/API-SQL-TEST-RESULTS.md)
 
 [Kurumsal API test yaklaşımını incele](09-test-cases-uat/API-TEST-STRATEGY.md): contract, iş kuralı, negatif/güvenlik, API–DB mutabakatı, veri yönetimi, assertion ve CI hedefi.
 
