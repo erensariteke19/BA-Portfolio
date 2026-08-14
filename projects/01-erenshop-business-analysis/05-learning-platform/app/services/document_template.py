@@ -426,7 +426,7 @@ EXAMPLE_SECTIONS_CONTENT = {
         "Versiyon: 1.0\n"
         "Hazırlayan: Eren Sarıteke (İş Analisti)\n"
         "Tarih: 20.05.2026\n"
-        "Gözden Geçiren: Ömer Gökdere (Yazılım Yöneticisi)\n"
+        "Gözden Geçiren: Platform Yöneticisi\n"
         "Durum: Onaylı\n"
         "Hedef Sprint: Sprint 28 (03.06.2026 - 17.06.2026)"
     ),
