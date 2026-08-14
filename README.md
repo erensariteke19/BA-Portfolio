@@ -2,33 +2,43 @@
 
 Merhaba, ben **Eren Sarıteke**. İş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere ve test edilebilir çözümlere dönüştürmeye odaklanan Junior Business Analyst adayıyım.
 
-Bu portföy; iş analizi yaklaşımımı, dokümantasyon becerilerimi ve SQL ile kullanıcı arayüzü çalışmalarımı vaka çalışmaları üzerinden gösterir. İçerikler portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
+Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, wireframe ve UAT çalışmalarımı gerçek çalışma kanıtlarıyla sunar. İçerikler eğitim ve portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
+
+## Öne çıkan çalışmalar
+
+| Çalışma | Odak | Kanıtlar |
+|---|---|---|
+| [ErenShop EDU — İş Analizi, SQL ve API](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uçtan uca analiz | 4 BA vaka çalışması, SQL Server, Postman, FastAPI ve web arayüzü |
+| [Sipariş İptali — Uçtan Uca Vaka Çalışması](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | AS-IS/TO-BE, gereksinimler, user stories, RTM, UAT, veri modeli ve wireframe |
+| [SQL ve Veri Doğrulama Çalışması](projects/02-sql-data-analysis/README.md) | API işlemlerinin veritabanında doğrulanması | SQL şeması, eğitim sorguları, CRUD doğrulaması ve ekran kanıtı |
+| [UI Prototipleri ve Wireframe'ler](projects/03-react-ui-prototype/README.md) | Gereksinimlerin ekranlara dönüştürülmesi | Çalışan HTML/CSS/JavaScript arayüzü ve 4 SVG wireframe |
 
 ## Yetkinlikler
 
-- Gereksinim toplama ve analiz
-- BRD, fonksiyonel ve fonksiyonel olmayan gereksinimler
-- User story ve acceptance criteria
+- İş gereksinimlerini toplama, analiz etme ve dokümante etme
+- Fonksiyonel ve fonksiyonel olmayan gereksinimler
+- User story, acceptance criteria ve use case
 - AS-IS / TO-BE süreç analizi
-- Use case ve paydaş analizi
-- SQL, veri modeli ve ER diyagramı
-- Wireframe ve React tabanlı prototip
-- Test case, UAT ve gereksinim izlenebilirliği
+- Paydaş, kapsam, risk ve karar analizi
+- SQL Server, veri modeli ve veri doğrulama
+- REST API, Swagger ve Postman testleri
+- Wireframe, test case, UAT ve gereksinim izlenebilirliği
 
-## Projeler
+## Doğrulanmış uygulama çalışması
 
-| Proje | Odak | Çıktılar | Durum |
-|---|---|---|---|
-| [ErenShop EDU — BA, SQL ve API Öğrenme Projesi](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uygulamalı öğrenme | 4 BA analizi, SQL Server, Postman, FastAPI ve web arayüzü | Tamamlandı |
-| [Sipariş İptali — Featured Case Study](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | AS-IS/TO-BE, user stories, RTM, UAT, veri modeli ve wireframe | Tamamlandı |
-| [SQL & Data Analysis](projects/02-sql-data-analysis/README.md) | Veri analizi | Veri modeli, sorgular, iş içgörüleri | Taslak |
-| [React/UI Prototype](projects/03-react-ui-prototype/README.md) | Gereksinimden prototipe | Wireframe, UI, acceptance criteria, demo | Taslak |
+ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmış ve kanıtlanmıştır:
 
-> “Taslak” etiketi, ilgili vaka çalışmasına kişisel çalışma kanıtlarının henüz eklenmediğini gösterir. ErenShop EDU ortak emekle hazırlanmış bir eğitim projesidir; roller proje sayfasında açıkça belirtilmiştir.
+- Ürün listeleme, arama ve detay görüntüleme
+- Yeni ürün oluşturma ve mevcut ürünü güncelleme
+- Ürünü pasife alma (soft delete)
+- `IsActive = 0` sonucunu SQL Server üzerinden doğrulama
+- Pasif ürünün API tarafından `404 Not Found` ile gizlendiğini kontrol etme
+
+[API ve SQL test sonuçlarını 8 ekran kanıtıyla incele](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
 
 ## Kullandığım araçlar
 
-`SQL` · `Excel` · `Jira` · `Confluence` · `Draw.io` · `Figma` · `React` · `Git/GitHub`
+`SQL Server` · `Postman` · `Swagger` · `FastAPI` · `HTML/CSS/JavaScript` · `Microsoft Word` · `Git/GitHub`
 
 ## Analiz yaklaşımım
 
@@ -38,11 +48,16 @@ Bu portföy; iş analizi yaklaşımımı, dokümantasyon becerilerimi ve SQL ile
 4. Süreç, veri modeli ve ekran taslaklarıyla çözümü görünür kılarım.
 5. Test senaryoları ve izlenebilirlik matrisiyle kapsamı doğrularım.
 
+## Katkı ve şeffaflık
+
+ErenShop EDU platformu ve teknik öğrenme altyapısı **Ömer Gökdere** tarafından geliştirilmiştir. Dört iş analizi vaka çalışması **Eren Sarıteke** tarafından hazırlanmış; SQL ve API senaryoları Eren tarafından çalıştırılıp ekran kanıtlarıyla doğrulanmıştır. Kaynaklar, Ömer Gökdere'nin izniyle portföyde yayımlanmaktadır. Ayrıntılı rol dağılımı için [CREDITS.md](projects/01-erenshop-business-analysis/CREDITS.md) dosyasını inceleyebilirsiniz.
+
 ## İletişim
 
-- LinkedIn: Yakında eklenecek
-- E-posta: saritekeeren@gmail.com
-- Konum: Türkiye
+- [LinkedIn — Eren Sarıteke](https://www.linkedin.com/in/erensar%C4%B1teke/)
+- [GitHub — erensariteke19](https://github.com/erensariteke19)
+- E-posta: [saritekeeren@gmail.com](mailto:saritekeeren@gmail.com)
+- Konum: İstanbul, Türkiye
 
 ---
 
