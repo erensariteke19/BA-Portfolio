@@ -1,36 +1,27 @@
-# Katkılar ve Kullanım İzni
+# Çalışma Sahipliği ve Eğitim Desteği
 
-## Ömer Gökdere
+## Portföy sahibi — Eren Sarıteke
 
-**Rol:** Platform geliştiricisi ve eğitim ortamı hazırlayıcısı
+Bu repodaki iş analizi yaklaşımı ve portföy sunumu Eren Sarıteke tarafından hazırlanmıştır. Çalışmanın kapsamı şunları içerir:
 
-Başlıca katkıları:
+- İş problemi, kapsam, paydaş ve süreç analizi
+- Business case, KPI ve başarı ölçütleri
+- Fonksiyonel ve fonksiyonel olmayan gereksinimler
+- User story, acceptance criteria, use case ve iş kuralları
+- AS-IS / TO-BE süreçleri, veri modeli ve entegrasyon analizi
+- SQL analizleri, veri kalite ve mutabakat kontrolleri
+- API/Postman doğrulamaları ve SQL Server sonuç kontrolleri
+- Test senaryoları, UAT, RTM, risk ve değişiklik analizi
+- Wireframe, UI spesifikasyonu ve portföy dokümantasyonu
 
-- ErenShop EDU mimarisi
-- Python/FastAPI backend
-- Web arayüzü ve eğitim ekranları
-- Microsoft SQL Server şema ve eğitim sorguları
-- Postman koleksiyonu ve API test ortamı
-- Kurulum, SQL, Postman ve API eğitim dokümantasyonu
+ErenShop ortamı; bu analizlerin uygulanması, çalıştırılması ve kanıtlanması için kullanılan teknik çalışma ortamıdır. Portföydeki kararlar, analiz çıktıları, test yorumları ve geliştirilmiş vaka paketleri Eren Sarıteke'nin çalışmasını temsil eder.
 
-Ömer Gökdere, bu kaynakların Eren Sarıteke'nin kişisel öğrenme/iş analisti portföyünde yayımlanmasına izin vermiştir.
+## Eğitim desteği ve kullanım izni
 
-## Eren Sarıteke
+Ömer Gökdere, öğrenme sürecinde teknik eğitim desteği sağlamış ve başlangıç eğitim materyallerinin bu kişisel portföy kapsamında kullanılmasına izin vermiştir.
 
-**Rol:** Junior Business Analyst adayı ve uygulamalı öğrenme katılımcısı
+Bu destek, portföydeki iş analizi çıktılarının sahipliğini değiştirmez. Portföyün sahibi ve çalışmayı sunan kişi Eren Sarıteke'dir.
 
-Başlıca katkıları:
+## Kullanım notu
 
-- Abonelik siparişi iş analizi
-- Sipariş iptali iş analizi
-- Sipariş notu iş analizi
-- Ürün görseli yönetimi iş analizi
-- Platform üzerinden SQL, API ve iş analizi pratiği
-
-## Portföydeki sunum ilkesi
-
-Bu proje ortak emeği görünür kılmak amacıyla yayımlanır. Platform kodu Eren Sarıteke'nin kişisel yazılım geliştirme çalışması olarak gösterilmez; Eren'in BA çalışmaları da platform geliştiricisinin çalışması olarak gösterilmez.
-
-## Lisans notu
-
-Bu dosya katkı ve yayın iznini açıklar; tek başına genel amaçlı açık kaynak lisansı oluşturmaz. Yeniden kullanım veya ticari kullanım için proje sahiplerinden ayrıca izin alınmalıdır.
+Bu repo kişisel öğrenme ve iş analisti portföyü amacıyla yayımlanır. İçeriklerin yeniden veya ticari amaçla kullanılması için ilgili hak sahiplerinden ayrıca izin alınmalıdır.
