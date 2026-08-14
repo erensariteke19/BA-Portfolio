@@ -34,6 +34,18 @@ Teknik platform ve çalışan arayüz Ömer Gökdere tarafından geliştirilmiş
 4. Gereksinimler ve kabul kriterleri ekran bileşenleriyle eşleştirildi.
 5. Wireframe'ler ilgili vaka dokümanlarına bağlandı.
 
+## İş dünyası teslim standardı
+
+Wireframe'ler tek başına tasarım kanıtı olarak sunulmaz. Ekranların kullanıcı rolü, bileşen kuralları, loading/success/error durumları, erişilebilirlik kabulü, analitik olayları ve gereksinim bağlantıları [UI/UX Fonksiyonel Spesifikasyonu](UI-SPECIFICATION.md) içinde tanımlanmıştır.
+
+| Kontrol | Portföy kanıtı |
+|---|---|
+| Gereksinim–ekran bağlantısı | Ekran envanteri ve bileşen kuralları |
+| Hata ve durum tasarımı | UI durum modeli |
+| Erişilebilirlik | WCAG 2.1 AA odaklı kabul listesi |
+| Ölçülebilirlik | Funnel ve hata analitiği olayları |
+| Geliştirme/QA handoff | API, validasyon ve teslim kontrol listesi |
+
 ## Kullanılan araçlar
 
 `Wireframe` · `SVG` · `HTML` · `CSS` · `JavaScript` · `GitHub`
