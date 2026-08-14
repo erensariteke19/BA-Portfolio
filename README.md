@@ -12,10 +12,10 @@ Güncel Business Analyst ilanlarında aranan SQL, API/entegrasyon, Jira/Confluen
 
 | Çalışma | Odak | Kanıtlar |
 |---|---|---|
-| [ErenShop EDU — İş Analizi, SQL ve API](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uçtan uca analiz | 4 BA vaka çalışması, SQL Server, Postman, FastAPI ve web arayüzü |
+| [ErenShop EDU — İş Analizi, SQL ve API](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uçtan uca analiz | Uçtan uca BA vaka paketleri, SQL Server, Postman, FastAPI ve web arayüzü |
 | [Sipariş İptali — Kurumsal BA Vaka Çalışması](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | Business case, KPI, RACI, AS-IS/TO-BE, backlog, RTM, API/veri modeli, UAT ve release planı |
-| [SQL ile İş ve Veri Analizi](projects/02-sql-data-analysis/README.md) | Satış, müşteri, ürün, stok, ödeme ve veri kalitesi analizi | 20 iş odaklı sorgu, CTE, window functions, KPI, mutabakat ve ekran kanıtı |
-| [UI Prototipleri ve Wireframe'ler](projects/03-react-ui-prototype/README.md) | Gereksinimlerin ekranlara dönüştürülmesi | Çalışan HTML/CSS/JavaScript arayüzü ve 4 SVG wireframe |
+| [SQL ile İş ve Veri Analizi](projects/02-sql-data-analysis/README.md) | Satış, müşteri, ürün, stok, ödeme ve veri kalitesi analizi | İş odaklı SQL paketi, CTE, window functions, KPI, mutabakat ve veri kalite kontrolleri |
+| [UI Prototipleri ve Wireframe'ler](projects/03-react-ui-prototype/README.md) | Gereksinimlerin ekranlara dönüştürülmesi | Çalışan HTML/CSS/JavaScript arayüzü ve gereksinim bağlantılı SVG wireframe'ler |
 
 ## Yetkinlikler
 
@@ -41,7 +41,7 @@ ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmı�
 - `IsActive = 0` sonucunu SQL Server üzerinden doğrulama
 - Pasif ürünün API tarafından `404 Not Found` ile gizlendiğini kontrol etme
 
-[API ve SQL test sonuçlarını 8 ekran kanıtıyla incele](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
+[API ve SQL test sonuçlarını ekran kanıtlarıyla incele](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
 
 ## Kullandığım araçlar
 
