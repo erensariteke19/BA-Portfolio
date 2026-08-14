@@ -42,7 +42,7 @@ Bu vaka çalışması, SQL'i yalnızca veri listelemek için değil; satış per
 
 ## Dosyalar
 
-- [İleri seviye iş analizi sorguları](advanced-business-analysis.sql) — 20 profesyonel analiz ve kontrol sorgusu
+- [İleri seviye iş analizi sorguları](advanced-business-analysis.sql) — iş, veri kalitesi ve mutabakat odaklı gelişmiş sorgu paketi
 - [SELECT eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
 - [JOIN eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
 - [Raporlama sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/06_training_report_queries.sql)
