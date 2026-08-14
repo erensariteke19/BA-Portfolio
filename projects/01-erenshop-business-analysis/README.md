@@ -63,6 +63,10 @@ Bu bölümdeki dört uçtan uca BA vaka çalışması, ileri SQL analizleri, API
 - MoSCoW öncelikli MVP backlog ile Definition of Ready/Done
 - Değişiklik etki analizi ve API sözleşmesi
 - Release, UAT, go/no-go ve yayın sonrası izleme planı
+- Jira/Confluence uyumlu epic, story, backlog ve Agile ceremony paketi
+- BPMN/UML swimlane ve sequence diagramları
+- Sistem entegrasyonu, veri eşleme ve hata stratejisi
+- KPI sözlüğü ve operasyon dashboard gereksinimleri
 - Düzenlenmiş profesyonel Word sürümü
 
 ## Profesyonel Word sürümleri
