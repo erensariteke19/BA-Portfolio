@@ -4,7 +4,7 @@ Bu klasör, Eren Sarıteke'nin BA/SQL/API öğrenme çalışmalarına temel olu�
 
 ## Geliştirici ve izin
 
-Platform **Ömer Gökdere** tarafından geliştirilmiştir ve Eren Sarıteke'nin portföyünde kaynak belirtilerek yayımlanmasına izin verilmiştir. Katkı ayrıntıları için [proje kredi dosyasına](../CREDITS.md) bakın.
+Bu klasör, BA çalışmalarının üzerinde doğrulandığı FastAPI, SQL Server, Postman ve web arayüzü tabanlı teknik öğrenme ortamını içerir. Kaynak ve yayın izni bilgisi [proje kredi dosyasında](../CREDITS.md) tutulur.
 
 ## Klasörler
 
