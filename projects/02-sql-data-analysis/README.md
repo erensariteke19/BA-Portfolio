@@ -1,42 +1,73 @@
-# ErenShop SQL ve Veri Doğrulama Çalışması
+# ErenShop SQL ile İş ve Veri Analizi
 
-Bu çalışma, ErenShop eğitim ortamındaki SQL Server veritabanını inceleme ve API üzerinden yapılan ürün işlemlerini veritabanı seviyesinde doğrulama sürecimi gösterir.
+Bu vaka çalışması, SQL'i yalnızca veri listelemek için değil; satış performansını ölçmek, müşteri davranışını anlamak, operasyonel riskleri tespit etmek ve veri kalitesini doğrulamak için nasıl kullandığımı gösterir.
 
-## İş amacı
+## Proje özeti
 
-Ürün yönetimi API'sinde yapılan oluşturma, güncelleme ve pasife alma işlemlerinin veritabanına doğru yansıdığını kontrol etmek; API yanıtı ile kalıcı veri arasındaki tutarlılığı doğrulamak.
+| Başlık | Açıklama |
+|---|---|
+| İş alanı | E-ticaret — ürün, müşteri, sepet, sipariş ve ödeme |
+| Veritabanı | Microsoft SQL Server / ErenShopDB |
+| Veri | Eğitim amacıyla hazırlanmış sentetik veri seti |
+| Rolüm | İş sorularını tanımlama, sorguları çalıştırma, API–veritabanı tutarlılığını doğrulama ve analiz paketini hazırlama |
+| Teknik altyapı | Ömer Gökdere tarafından sağlanan ErenShop öğrenme ortamı |
 
-## Kapsam ve veri modeli
+## Yanıtlanan iş soruları
 
-Çalışma; ürün, kategori, müşteri, sepet, sipariş ve ödeme tablolarından oluşan sentetik ErenShop veri setini kullanır. Teknik öğrenme altyapısı Ömer Gökdere tarafından sağlanmış, sorgular ve doğrulama adımları Eren Sarıteke tarafından uygulanmıştır.
+1. Satış geliri, sipariş sayısı, ortalama sepet tutarı ve aktif müşteri sayısı nedir?
+2. Aylık gelir ve sipariş adedi nasıl değişmektedir?
+3. Gelir açısından en güçlü kategori ve ürünler hangileridir?
+4. Her kategorinin kendi içindeki en güçlü ürünleri hangileridir?
+5. En değerli müşteriler kimlerdir ve müşteri segmentleri nasıl oluşmaktadır?
+6. Tekrar sipariş veren müşteri oranı nedir?
+7. Sipariş statülerindeki dağılım operasyonel darboğaz gösteriyor mu?
+8. Ödeme başarı oranı ve ödeme yöntemi performansı nedir?
+9. Hangi ürünlerde stok riski vardır ve öncelik sırası ne olmalıdır?
+10. Hiç satılmayan ürünler hangileridir?
+11. Sipariş toplamları, sipariş kalemleri ve ödeme tutarları birbiriyle tutarlı mı?
+12. Yinelenen aktif sepet, geçersiz fiyat/stok veya eksik ilişki gibi veri kalitesi sorunları var mı?
 
-- [Veri modeli özeti](../01-erenshop-business-analysis/07-database-sql/DATA-MODEL-OVERVIEW.md)
-- [Tablo oluşturma betiği](../01-erenshop-business-analysis/05-learning-platform/sql/02_create_tables.sql)
-- [Örnek veri betiği](../01-erenshop-business-analysis/05-learning-platform/sql/03_seed_data.sql)
+## SQL yetkinlikleri
 
-## Kullanılan SQL çalışmaları
+| Seviye | Teknikler | Portföydeki kullanım |
+|---|---|---|
+| Temel | `SELECT`, `WHERE`, `LIKE`, `IN`, `BETWEEN`, `ORDER BY`, `TOP` | Ürün, müşteri ve stok filtreleri |
+| Orta | `INNER/LEFT JOIN`, `GROUP BY`, `HAVING`, `SUM`, `COUNT`, `AVG`, `CASE` | Satış, kategori, müşteri ve stok raporları |
+| İleri | CTE, alt sorgu, `NOT EXISTS`, `ROW_NUMBER`, `RANK`, `LAG`, running total | Segmentasyon, sıralama, trend ve satılmayan ürün analizi |
+| Veri kalitesi | Mutabakat, duplicate ve referential kontrol sorguları | Sipariş–kalem–ödeme tutarlılığı |
+| Güvenli işlem | `TRY/CATCH`, transaction, `COMMIT/ROLLBACK` | Soft-delete örneği ve kontrollü veri değişikliği |
+| Performans | SARGable tarih filtresi ve indeks önerileri | Raporlama sorgularının ölçeklenebilirliği |
 
-- [SELECT sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
-- [JOIN sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
+[Ayrıntılı SQL yetkinlik matrisini incele](SQL-CAPABILITY-MATRIX.md)
+
+## Dosyalar
+
+- [İleri seviye iş analizi sorguları](advanced-business-analysis.sql) — 20 profesyonel analiz ve kontrol sorgusu
+- [SELECT eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
+- [JOIN eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
 - [Raporlama sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/06_training_report_queries.sql)
-- [Eğitim tabloları](../01-erenshop-business-analysis/05-learning-platform/sql/08_training_tables.sql)
-- [İş talepleri için örnek veriler](../01-erenshop-business-analysis/05-learning-platform/sql/09_seed_business_requests.sql)
+- [Tablo oluşturma betiği](../01-erenshop-business-analysis/05-learning-platform/sql/02_create_tables.sql)
+- [Sentetik örnek veri](../01-erenshop-business-analysis/05-learning-platform/sql/03_seed_data.sql)
+- [Veri modeli özeti](../01-erenshop-business-analysis/07-database-sql/DATA-MODEL-OVERVIEW.md)
 
-## Uygulanan doğrulama senaryosu
+## Uygulanmış API–SQL doğrulaması
 
-1. Postman üzerinden test ürünü oluşturuldu ve API `201 Created` yanıtı verdi.
-2. Ürünün fiyat ve stok bilgileri güncellendi ve API `200 OK` yanıtı verdi.
-3. Ürün DELETE isteğiyle fiziksel olarak silinmeden pasife alındı.
-4. SQL Server üzerinde ilgili kaydın `IsActive = 0` olduğu doğrulandı.
-5. Aynı ürün API üzerinden yeniden istendiğinde `404 Not Found` döndüğü kontrol edildi.
+Postman üzerinden bir ürün oluşturuldu, güncellendi ve soft-delete ile pasife alındı. Ardından SQL Server üzerinde kaydın `IsActive = 0` olduğu doğrulandı. Pasif ürünün API tarafından `404 Not Found` ile gizlendiği de kontrol edildi.
 
-## Sonuç ve iş değeri
+- [Ayrıntılı API ve SQL test raporu](../01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
+- [SQL Server doğrulama ekranı](../01-erenshop-business-analysis/09-test-cases-uat/evidence/07-soft-delete-sql-proof.png)
 
-Bu kontrol, yalnızca HTTP durum kodunun değil, veritabanındaki gerçek durumun da test edilmesini sağladı. Soft-delete iş kuralının beklendiği gibi çalıştığı ve pasif ürünün müşteriye sunulmadığı doğrulandı.
+## Analizden aksiyona
 
-- [Ayrıntılı test sonuçları](../01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
-- [SQL doğrulama ekranı](../01-erenshop-business-analysis/09-test-cases-uat/evidence/07-soft-delete-sql-proof.png)
+Bu sorguların amacı yalnızca sonuç tablosu üretmek değildir. Çıktılar aşağıdaki kararları destekler:
 
-## Kullanılan araçlar
+- Kritik stok ürünleri için satın alma önceliği oluşturmak
+- Yüksek değerli müşteriler için sadakat/CRM aksiyonu planlamak
+- Başarısız ödemelerin yoğunlaştığı yöntemleri incelemek
+- Satılmayan ürünlerde kampanya, fiyat veya ürün sonlandırma kararı vermek
+- Sipariş ve ödeme mutabakat hatalarını operasyon ekibine iletmek
+- Kategori ve ürün performansına göre ticari öncelik belirlemek
 
-`SQL Server` · `SSMS` · `Postman` · `REST API` · `Swagger`
+## Şeffaflık notu
+
+Temel ürün CRUD ve soft-delete senaryosu çalıştırılmış ve ekran kanıtlarıyla belgelenmiştir. İleri analiz sorguları mevcut ErenShop şemasına uygun, çalıştırılabilir bir portföy paketi olarak hazırlanmıştır; üretim sonucu veya gerçek şirket verisi iddiası taşımaz.
