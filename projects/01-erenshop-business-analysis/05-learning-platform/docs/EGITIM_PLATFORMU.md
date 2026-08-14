@@ -84,9 +84,9 @@ Eğitim platformu: <http://localhost:8000/frontend/training.html>
 
 ---
 
-## Kullanım — Ömer (Admin)
+## Kullanım — Platform Admin
 
-1. Sağ üstten kullanıcı seçiminde **Omer (admin)**'i seç.
+1. Sağ üstten kullanıcı seçiminde **Platform Admin** kullanıcısını seç.
 2. **Admin İnceleme** sekmesi açılır.
 3. Bekleyen submission'ları görür, **✓ Onayla** veya **✗ Reddet** edersin.
 4. Not bırakabilirsin (red sebebi açıklaması gibi).
