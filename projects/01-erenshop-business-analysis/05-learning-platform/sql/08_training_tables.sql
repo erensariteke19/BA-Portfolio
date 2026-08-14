@@ -160,9 +160,9 @@ BEGIN
     PRINT 'Varsayilan trainee kullanici eklendi: Eren';
 END
 
-IF NOT EXISTS (SELECT 1 FROM TrainingUsers WHERE FullName = 'Omer')
+IF NOT EXISTS (SELECT 1 FROM TrainingUsers WHERE FullName = 'Platform Admin')
 BEGIN
-    INSERT INTO TrainingUsers (FullName, Role) VALUES ('Omer', 'admin');
-    PRINT 'Varsayilan admin kullanici eklendi: Omer';
+    INSERT INTO TrainingUsers (FullName, Role) VALUES ('Platform Admin', 'admin');
+    PRINT 'Varsayilan admin kullanici eklendi: Platform Admin';
 END
 GO
