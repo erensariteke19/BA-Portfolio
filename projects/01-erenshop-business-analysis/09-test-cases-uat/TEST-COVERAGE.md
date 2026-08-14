@@ -1,5 +1,7 @@
 # Test Kapsamı Özeti
 
+Test seviyeleri, assertion standardı, veri/environment yönetimi, hata önceliği ve otomasyon hedefi için [API Test Stratejisi](API-TEST-STRATEGY.md) dokümanına bakın.
+
 ## Kapsanan test türleri
 
 - Happy path senaryoları
