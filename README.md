@@ -9,7 +9,7 @@ Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, 
 | Çalışma | Odak | Kanıtlar |
 |---|---|---|
 | [ErenShop EDU — İş Analizi, SQL ve API](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uçtan uca analiz | 4 BA vaka çalışması, SQL Server, Postman, FastAPI ve web arayüzü |
-| [Sipariş İptali — Uçtan Uca Vaka Çalışması](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | AS-IS/TO-BE, gereksinimler, user stories, RTM, UAT, veri modeli ve wireframe |
+| [Sipariş İptali — Kurumsal BA Vaka Çalışması](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | Business case, KPI, RACI, AS-IS/TO-BE, backlog, RTM, API/veri modeli, UAT ve release planı |
 | [SQL ile İş ve Veri Analizi](projects/02-sql-data-analysis/README.md) | Satış, müşteri, ürün, stok, ödeme ve veri kalitesi analizi | 20 iş odaklı sorgu, CTE, window functions, KPI, mutabakat ve ekran kanıtı |
 | [UI Prototipleri ve Wireframe'ler](projects/03-react-ui-prototype/README.md) | Gereksinimlerin ekranlara dönüştürülmesi | Çalışan HTML/CSS/JavaScript arayüzü ve 4 SVG wireframe |
 
@@ -47,6 +47,7 @@ ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmı�
 3. Gereksinimleri önceliklendirip user story ve kabul kriterlerine dönüştürürüm.
 4. Süreç, veri modeli ve ekran taslaklarıyla çözümü görünür kılarım.
 5. Test senaryoları ve izlenebilirlik matrisiyle kapsamı doğrularım.
+6. Faydayı KPI, sahip ve ölçüm kaynağıyla; teslimatı release ve operasyonel kabul kapılarıyla yönetirim.
 
 ## Katkı ve şeffaflık
 
