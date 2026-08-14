@@ -24,7 +24,7 @@ ErenShop öğrenme ortamında mağaza, API/SQL dokümantasyonu ve BA eğitim ekr
 - [Dokümantasyon ekranı](../01-erenshop-business-analysis/05-learning-platform/frontend/docs.html)
 - [Arayüz kaynakları](../01-erenshop-business-analysis/05-learning-platform/frontend/)
 
-Bu portföyde iş analizi senaryoları, gereksinimler, kabul kriterleri, dört wireframe ve UI fonksiyonel spesifikasyonu Eren Sarıteke tarafından hazırlanmıştır. Çalışan eğitim arayüzünün kaynak bilgisi proje [CREDITS](../01-erenshop-business-analysis/CREDITS.md) dosyasında yer alır.
+Bu portföyde iş analizi senaryoları, gereksinimler, kabul kriterleri, wireframe'ler ve UI fonksiyonel spesifikasyonu Eren Sarıteke tarafından hazırlanmıştır. Çalışan eğitim arayüzünün kaynak bilgisi proje [CREDITS](../01-erenshop-business-analysis/CREDITS.md) dosyasında yer alır.
 
 ## Gereksinimden ekrana yaklaşım
 
