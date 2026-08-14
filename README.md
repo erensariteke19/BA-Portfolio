@@ -49,9 +49,9 @@ ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmı�
 5. Test senaryoları ve izlenebilirlik matrisiyle kapsamı doğrularım.
 6. Faydayı KPI, sahip ve ölçüm kaynağıyla; teslimatı release ve operasyonel kabul kapılarıyla yönetirim.
 
-## Katkı ve şeffaflık
+## Çalışma kapsamım
 
-ErenShop EDU platformu ve teknik öğrenme altyapısı **Ömer Gökdere** tarafından geliştirilmiştir. Dört iş analizi vaka çalışması **Eren Sarıteke** tarafından hazırlanmış; SQL ve API senaryoları Eren tarafından çalıştırılıp ekran kanıtlarıyla doğrulanmıştır. Kaynaklar, Ömer Gökdere'nin izniyle portföyde yayımlanmaktadır. Ayrıntılı rol dağılımı için [CREDITS.md](projects/01-erenshop-business-analysis/CREDITS.md) dosyasını inceleyebilirsiniz.
+Bu portföyde iş problemi ve kapsam analizi, business case/KPI tasarımı, gereksinimler, süreçler, user story ve kabul kriterleri, veri modeli, SQL analizleri, API/Postman doğrulamaları, RTM, UAT ve UI spesifikasyonları tarafımdan hazırlanmıştır. Kullanılan eğitim platformunun kaynak ve izin bilgisi kısa biçimde [CREDITS.md](projects/01-erenshop-business-analysis/CREDITS.md) dosyasında tutulur.
 
 ## İletişim
 
