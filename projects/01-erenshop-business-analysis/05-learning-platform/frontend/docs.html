@@ -319,7 +319,7 @@ venv\Scripts\activate</code></pre>
       <div class="note">📌 Eğitim platformu (analiz dokümanı egzersizi + SQL bilgi testi) modülünü kullanmak için aşağıdaki 3 script'i de çalıştır.</div>
       <table>
         <tr><th>Sıra</th><th>Dosya</th><th>Açıklama</th></tr>
-        <tr><td>4</td><td><code>08_training_tables.sql</code></td><td>6 eğitim tablosu + Eren/Omer kullanıcıları</td></tr>
+        <tr><td>4</td><td><code>08_training_tables.sql</code></td><td>6 eğitim tablosu + analist/admin kullanıcıları</td></tr>
         <tr><td>5</td><td><code>09_seed_business_requests.sql</code></td><td>40 geliştirme talebi (kolay/orta/zor)</td></tr>
         <tr><td>6</td><td><code>10_seed_sql_questions.sql</code></td><td>60 SQL test sorusu</td></tr>
       </table>
@@ -763,7 +763,7 @@ pip install -r requirements.txt</code></pre>
       <p>SSMS'te <code>ErenShopDB</code>'ye bağlıyken sırayla 3 dosyayı çalıştır (F5):</p>
       <table>
         <tr><th>Sıra</th><th>Dosya</th><th>İçerik</th></tr>
-        <tr><td>1</td><td><code>sql/08_training_tables.sql</code></td><td>6 tablo (TrainingUsers, BusinessRequests, RequestSubmissions, SqlQuestions, SqlTests, SqlTestQuestions) + varsayılan Eren/Omer kullanıcıları</td></tr>
+        <tr><td>1</td><td><code>sql/08_training_tables.sql</code></td><td>6 tablo (TrainingUsers, BusinessRequests, RequestSubmissions, SqlQuestions, SqlTests, SqlTestQuestions) + varsayılan analist/admin kullanıcıları</td></tr>
         <tr><td>2</td><td><code>sql/09_seed_business_requests.sql</code></td><td>40 hazır geliştirme talebi (10 kolay + 20 orta + 10 zor)</td></tr>
         <tr><td>3</td><td><code>sql/10_seed_sql_questions.sql</code></td><td>60 SQL sorusu (20 kolay + 25 orta + 15 zor)</td></tr>
       </table>
@@ -789,7 +789,7 @@ uvicorn app.main:app --reload --port 8000</code></pre>
         <li>Word'ü doldur (aşağıdaki "Şablondaki Bölümler" tablosuna ve örnek dokümana bak)</li>
         <li><strong>Yükle ve Değerlendir</strong> → sistem otomatik puanlar</li>
         <li>Sonuçlar: <strong>Yapısal</strong> + <strong>İçerik</strong> + <strong>Toplam</strong> puan, bölüm bazlı detay, anahtar kelime tablosu</li>
-        <li>Durum <strong>pending</strong> olur — Omer onaylayınca approved/rejected olur</li>
+        <li>Durum <strong>pending</strong> olur — platform yöneticisi inceleyince approved/rejected olur</li>
       </ol>
 
       <div class="note">
@@ -876,9 +876,9 @@ uvicorn app.main:app --reload --port 8000</code></pre>
       </table>
 
       <hr>
-      <h2>👨‍💼 Admin Paneli (Omer için)</h2>
+      <h2>👨‍💼 Admin Paneli</h2>
       <ol>
-        <li>Sağ üstte kullanıcı seçimi → <strong>Omer (admin)</strong></li>
+        <li>Sağ üstte kullanıcı seçimi → <strong>Platform Admin</strong></li>
         <li>Yeni sekme açılır: <strong>Admin İnceleme</strong></li>
         <li>Bekleyen submission'ları gör → "Detay" ile aç, Word'ü indir, oku</li>
         <li><strong>✓ Onayla</strong> veya <strong>✗ Reddet</strong> + isteğe bağlı not</li>
@@ -908,7 +908,7 @@ uvicorn app.main:app --reload --port 8000</code></pre>
 └── uploads/                        → Yüklenen Word dosyaları burada saklanır</code></pre>
 
       <h2>🔌 Eğitim API Endpoint'leri</h2>
-      <div class="endpoint"><span class="badge get">GET</span> <code>/api/training/users</code> — Eren ve Omer kullanıcılarını listeler.</div>
+      <div class="endpoint"><span class="badge get">GET</span> <code>/api/training/users</code> — Analist ve admin kullanıcılarını listeler.</div>
       <div class="endpoint"><span class="badge get">GET</span> <code>/api/training/requests/random?user_id=1</code> — Kullanıcıya tekrar gelmeyecek rastgele talep.</div>
       <div class="endpoint"><span class="badge get">GET</span> <code>/api/training/template?request_id=5</code> — Boş Word şablonunu indir (kapakta talep yazılı).</div>
       <div class="endpoint"><span class="badge post">POST</span> <code>/api/training/submissions</code> — Doldurulmuş Word'ü yükle (multipart/form-data).</div>
