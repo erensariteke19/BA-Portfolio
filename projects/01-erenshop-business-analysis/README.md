@@ -1,8 +1,8 @@
-# ErenShop EDU — BA, SQL ve API Öğrenme Projesi
+# ErenShop — Uçtan Uca İş Analizi ve Çözüm Doğrulama
 
-ErenShop EDU; e-ticaret sipariş, ürün, müşteri, sepet ve ödeme alanlarını kapsayan; iş analizi, SQL Server, REST API ve Postman çalışmalarını aynı çözüm bağlamında gösteren uygulamalı bir portföy projesidir.
+ErenShop; e-ticaret sipariş, ürün, müşteri, sepet ve ödeme alanlarını kapsayan; iş analizi, süreç, veri, REST API, test ve kullanıcı deneyimi kararlarını aynı çözüm bağlamında birleştiren uygulamalı portföy çalışmasıdır.
 
-Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL doğrulamaları ve kurumsal teslim dokümanları Eren Sarıteke'nin portföy çalışmalarıdır. Kullanılan eğitim altyapısının kaynak ve yayın izni bilgisi [CREDITS.md](CREDITS.md) dosyasında tutulur.
+Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL doğrulamaları ve kurumsal teslim dokümanları Eren Sarıteke'nin portföy çalışmalarıdır. Teknik referans ortamının kaynak ve yayın izni bilgisi [CREDITS.md](CREDITS.md) dosyasında tutulur.
 
 ## Proje bileşenleri
 
@@ -14,7 +14,7 @@ Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL
 | API test katmanı | Postman collection/environment ve API–DB kontrolleri | Contract, negatif test ve mutabakat |
 | Kullanıcı deneyimi | Wireframe ve UI fonksiyonel spesifikasyonu | Gereksinimden ekrana izlenebilirlik |
 
-## Uyguladığım analiz kapsamı
+## Analiz sorumluluğum
 
 - İş problemini ve kapsamı tanımlamak
 - Mevcut durumu ve etkilenen modülleri analiz etmek
@@ -78,7 +78,7 @@ Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL
 | Sipariş notu | [Profesyonel](10-original-documents/03-siparis-notu-analizi-profesyonel.docx) | [Orijinal](10-original-documents/03-siparis-notu-analizi.docx) |
 | Ürün görseli | [Profesyonel](10-original-documents/04-urun-gorseli-analizi-profesyonel.docx) | [Orijinal](10-original-documents/04-urun-gorseli-analizi.docx) |
 
-## Örnek izlenebilirlik
+## Gereksinim izlenebilirliği
 
 | İş ihtiyacı | Gereksinim | İş kuralı | Kabul kriteri | Test |
 |---|---|---|---|---|
@@ -91,25 +91,25 @@ Bu bölümdeki uçtan uca BA vaka çalışmaları, ileri SQL analizleri, API/SQL
 
 `BRD/SRS yaklaşımı` · `Use case analizi` · `Veri modelleme` · `Acceptance criteria` · `Test design` · `SQL Server` · `Postman` · `Swagger` · `FastAPI` · `Microsoft Word`
 
-## Teknik öğrenme ortamı
+## Teknik referans ve doğrulama ortamı
 
 Platform kaynakları [05-learning-platform](05-learning-platform/README-PORTFOLIO.md) altında yer alır:
 
 - `app/`: FastAPI route, schema ve service katmanları
-- `frontend/`: Mağaza, dokümantasyon ve eğitim ekranları
-- `sql/`: Veritabanı, tablo, sentetik veri ve eğitim sorguları
+- `frontend/`: Mağaza, dokümantasyon ve analiz çalışma ekranları
+- `sql/`: Veritabanı, tablo, sentetik veri ve analiz sorguları
 - `postman/`: API koleksiyonu ve yerel environment
-- `docs/`: Kurulum, API, SQL ve Postman eğitim notları
+- `docs/`: Kurulum, API, SQL ve Postman teknik referansları
 
 Yerel `.env`, sanal ortam, cache dosyaları ve yüklenen kullanıcı belgeleri bilerek dahil edilmemiştir.
 
 ## Kanıt ve kaynak notu
 
-Çalıştırılan SQL/API testleri tarihli sonuç raporu ve ekran kanıtlarıyla işaretlenir; tasarım seviyesindeki UAT ve hedef mimari çıktıları ayrıca belirtilir. Böylece uygulanmış doğrulamalar ile önerilen çözüm tasarımı birbirine karıştırılmaz. Eğitim platformunun kaynak bilgisi yalnızca [CREDITS.md](CREDITS.md) dosyasında açıklanır.
+Çalıştırılan SQL/API testleri tarihli sonuç raporu ve ekran kanıtlarıyla işaretlenir; tasarım seviyesindeki UAT ve hedef mimari çıktıları ayrıca belirtilir. Böylece uygulanmış doğrulamalar ile önerilen çözüm tasarımı birbirine karıştırılmaz. Teknik referans ortamının kaynak bilgisi [CREDITS.md](CREDITS.md) dosyasında açıklanır.
 
-## Çalıştırılmış API ve SQL kanıtları
+## Çözüm doğrulama kapsamı
 
-Ürün listeleme, arama, detay görüntüleme, oluşturma, güncelleme ve pasife alma akışları Postman üzerinden çalıştırıldı. Pasife alma davranışı SQL Server üzerinde `IsActive=0` sonucu ile ayrıca doğrulandı. Pasif ürünün API tarafından `404 Not Found` ile gizlendiği negatif senaryoda kontrol edildi.
+Teknik doğrulama; API sözleşmesi, pozitif/negatif davranış, veri kalıcılığı ve API–DB tutarlılığı katmanlarında ele alınır. Ürün yönetimi akışı Postman üzerinden çalıştırılmış; veri değişikliği SQL Server kaydıyla, pasif kaydın görünürlük kuralı ise negatif API kontrolüyle doğrulanmıştır. Aynı yaklaşım sipariş, ödeme, müşteri ve veri kalitesi alanları için test/UAT tasarımı ve SQL kontrol paketiyle genişletilmiştir.
 
 [Test sonuçlarını ekran kanıtlarıyla incele](09-test-cases-uat/API-SQL-TEST-RESULTS.md)
 
