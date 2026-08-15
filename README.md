@@ -2,7 +2,7 @@
 
 Merhaba, ben **Eren Sarıteke**. İş Analizi Uzman Yardımcısı olarak iş ihtiyaçlarını anlaşılır gereksinimlere, modellenmiş süreçlere, veriyle desteklenen içgörülere ve test edilebilir teknik çözümlere dönüştürmeye odaklanıyorum.
 
-Bu portföy; gereksinim analizi, süreç modelleme, SQL Server, REST API testi, wireframe ve UAT çalışmalarımı gerçek çalışma kanıtlarıyla sunar. İçerikler eğitim ve portföy amacıyla hazırlanmıştır; kişisel veya gizli veri içermez.
+Bu portföy; iş ihtiyacının tanımlanmasından çözüm kapsamına, süreç ve veri modelinden API/SQL doğrulamasına, UAT ve yayın hazırlığına kadar uzanan iş analizi teslimlerini incelenebilir kanıtlarla sunar. Senaryolar sentetik ve anonimdir; kişisel veya gizli veri içermez.
 
 Güncel Business Analyst ilanlarında aranan SQL, API/entegrasyon, Jira/Confluence, Agile, BPMN/UML, UAT, change impact, KPI ve paydaş yönetimi yetkinliklerinin portföy kanıtlarıyla eşleşmesi için [İş İlanı Yetkinlik Matrisi](JOB-MARKET-ALIGNMENT.md) hazırlanmıştır.
 
@@ -12,36 +12,35 @@ Güncel Business Analyst ilanlarında aranan SQL, API/entegrasyon, Jira/Confluen
 
 | Çalışma | Odak | Kanıtlar |
 |---|---|---|
-| [ErenShop EDU — İş Analizi, SQL ve API](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde uçtan uca analiz | Uçtan uca BA vaka paketleri, SQL Server, Postman, FastAPI ve web arayüzü |
+| [ErenShop — Uçtan Uca İş Analizi ve Çözüm Doğrulama](projects/01-erenshop-business-analysis/README.md) | E-ticaret sistemi üzerinde iş, süreç, veri ve entegrasyon analizi | BA teslim paketi, SQL Server, Postman, FastAPI ve gereksinim bağlantılı UI |
 | [Sipariş İptali — Kurumsal BA Vaka Çalışması](projects/01-erenshop-business-analysis/featured-case-study/README.md) | Self-servis sipariş iptali | Business case, KPI, RACI, AS-IS/TO-BE, backlog, RTM, API/veri modeli, UAT ve release planı |
 | [SQL ile İş ve Veri Analizi](projects/02-sql-data-analysis/README.md) | Satış, müşteri, ürün, stok, ödeme ve veri kalitesi analizi | İş odaklı SQL paketi, CTE, window functions, KPI, mutabakat ve veri kalite kontrolleri |
 | [UI Prototipleri ve Wireframe'ler](projects/03-react-ui-prototype/README.md) | Gereksinimlerin ekranlara dönüştürülmesi | Çalışan HTML/CSS/JavaScript arayüzü ve gereksinim bağlantılı SVG wireframe'ler |
 
-## Yetkinlikler
+## Yetkinlik ve teslim kanıtı
 
-- İş gereksinimlerini toplama, analiz etme ve dokümante etme
-- Fonksiyonel ve fonksiyonel olmayan gereksinimler
-- User story, acceptance criteria ve use case
-- AS-IS / TO-BE süreç analizi
-- Paydaş, kapsam, risk ve karar analizi
-- SQL Server, veri modeli ve veri doğrulama
-- REST API, Swagger ve Postman testleri
-- Wireframe, test case, UAT ve gereksinim izlenebilirliği
-- Jira/Confluence uyumlu Agile backlog ve delivery artifacts
-- BPMN/UML, REST contract, sistem entegrasyonu ve veri akışı
-- KPI sözlüğü, dashboard gereksinimi ve veri kalite kontrolleri
+| İş analizi alanı | Uyguladığım yaklaşım | İncelenebilir kanıt |
+|---|---|---|
+| İş ihtiyacı ve kapsam | Problem, hedef, paydaş, kapsam/kapsam dışı ve başarı ölçütü | Business case, stakeholder/RACI, scope ve karar kayıtları |
+| Gereksinim yönetimi | Fonksiyonel/NFR, iş kuralı, user story ve Gherkin kabul kriteri | Kimliklendirilmiş gereksinimler, backlog ve RTM |
+| Süreç ve çözüm tasarımı | AS-IS/TO-BE, BPMN/UML, use case, veri modeli ve entegrasyon akışı | Süreç modelleri, API sözleşmesi, ER modeli ve veri eşleme |
+| Veri ve teknik analiz | SQL ile KPI, trend, segmentasyon, veri kalitesi ve mutabakat | SQL analiz paketi, API–DB tutarlılık kontrolleri |
+| Test ve teslimat | Pozitif/negatif test, UAT, release kapıları ve operasyonel kabul | Test/UAT seti, RTM, risk kaydı ve go/no-go planı |
+| Kullanıcı deneyimi | Gereksinimden ekrana durum, validasyon ve erişilebilirlik tasarımı | Wireframe ve UI fonksiyonel spesifikasyonu |
 
-## Doğrulanmış uygulama çalışması
+## Uygulama ve doğrulama kanıtları
 
-ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmış ve kanıtlanmıştır:
+Portföy yalnızca doküman üretimini değil, çözüm davranışının farklı katmanlarda nasıl doğrulandığını da gösterir:
 
-- Ürün listeleme, arama ve detay görüntüleme
-- Yeni ürün oluşturma ve mevcut ürünü güncelleme
-- Ürünü pasife alma (soft delete)
-- `IsActive = 0` sonucunu SQL Server üzerinden doğrulama
-- Pasif ürünün API tarafından `404 Not Found` ile gizlendiğini kontrol etme
+| Kanıt alanı | Doğrulanan konu | Kanıt seviyesi |
+|---|---|---|
+| API davranışı | Listeleme, arama, detay, oluşturma, güncelleme, pasife alma ve hata yanıtları | Postman üzerinden çalıştırılmış istek/yanıt kanıtı |
+| API–veritabanı mutabakatı | API işleminin SQL Server kaydına etkisi ve soft-delete sonrası görünürlük kuralı | SQL sonucu ve negatif API kontrolü |
+| İş ve veri analizi | Satış, müşteri, stok, ödeme, veri kalitesi ve tutarlılık kararları | Çalıştırılabilir SQL analiz paketi ve karar bağlantısı |
+| Gereksinim doğrulama | İş ihtiyacı–gereksinim–kabul kriteri–test ilişkisinin korunması | RTM, test tasarımı ve UAT kabul kapıları |
+| Çözüm handoff'u | API, veri, süreç ve ekran kurallarının geliştirme/QA için açıklığı | Sözleşme, model, wireframe ve fonksiyonel spesifikasyon |
 
-[API ve SQL test sonuçlarını ekran kanıtlarıyla incele](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md)
+[API ve SQL test sonuçlarını incele](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md) · [SQL analiz paketini incele](projects/02-sql-data-analysis/README.md) · [Uçtan uca RTM ve UAT paketini incele](projects/01-erenshop-business-analysis/featured-case-study/traceability-matrix.md)
 
 ## Kullandığım araçlar
 
@@ -49,16 +48,11 @@ ErenShop ürün yönetimi akışında aşağıdaki işlemler çalıştırılmı�
 
 ## Analiz yaklaşımım
 
-1. İş problemini, hedefi, kapsamı ve başarı ölçütlerini netleştiririm.
-2. Paydaşları ve mevcut süreci analiz ederim.
-3. Gereksinimleri önceliklendirip user story ve kabul kriterlerine dönüştürürüm.
-4. Süreç, veri modeli ve ekran taslaklarıyla çözümü görünür kılarım.
-5. Test senaryoları ve izlenebilirlik matrisiyle kapsamı doğrularım.
-6. Faydayı KPI, sahip ve ölçüm kaynağıyla; teslimatı release ve operasyonel kabul kapılarıyla yönetirim.
+İş problemini ve başarı ölçütünü netleştirir; paydaş, mevcut süreç ve sistem bağlamını birlikte değerlendiririm. Gereksinimleri önceliklendirilmiş ve test edilebilir çıktılara dönüştürür, çözümü süreç–veri–API–ekran katmanlarında tarif ederim. Kapsamı RTM ve UAT ile; beklenen faydayı KPI, veri kaynağı, sahiplik ve yayın sonrası izleme planıyla yönetirim.
 
 ## Çalışma kapsamım
 
-Bu portföyde iş problemi ve kapsam analizi, business case/KPI tasarımı, gereksinimler, süreçler, user story ve kabul kriterleri, veri modeli, SQL analizleri, API/Postman doğrulamaları, RTM, UAT ve UI spesifikasyonları tarafımdan hazırlanmıştır. Kullanılan eğitim platformunun kaynak ve izin bilgisi kısa biçimde [CREDITS.md](projects/01-erenshop-business-analysis/CREDITS.md) dosyasında tutulur.
+Bu portföyde iş problemi ve kapsam analizi, business case/KPI tasarımı, gereksinimler, süreçler, user story ve kabul kriterleri, veri modeli, SQL analizleri, API/Postman doğrulamaları, RTM, UAT ve UI spesifikasyonları tarafımdan hazırlanmıştır. Teknik referans ortamının kaynak ve izin bilgisi [CREDITS.md](projects/01-erenshop-business-analysis/CREDITS.md) dosyasında tutulur.
 
 ## İletişim
 
