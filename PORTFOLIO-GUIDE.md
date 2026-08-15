@@ -1,22 +1,25 @@
-# Portföyü Doldurma Rehberi
+# Portföy Kalite ve Yönetişim Standardı
 
-## Önce yapılacaklar
+Bu dosya, portföyde yayımlanan çalışmaların iş dünyasına uygunluk ölçütlerini tanımlar. Amaç dosya sayısını artırmak değil; her çıktının karar, kapsam, izlenebilirlik ve doğrulama değerini korumaktır.
 
-1. Ana `README.md` içindeki köşeli parantezli kişisel alanları doldurun.
-2. En güçlü çalışmayı uygun proje klasörüne taşıyın.
-3. Proje README'sinde problemi, rolünüzü, yaklaşımı ve sonucu anlatın.
-4. Kullanmadığınız şablon dosyalarını boş bırakmak yerine kaldırın.
-5. Her projeye en az bir görsel ve ölçülebilir sonuç ekleyin.
+## Teslim kabul kriterleri
 
-## Mevcut çalışmalar nasıl dönüştürülür?
+- İş problemi, etkilenen paydaş ve beklenen değer açıkça tanımlanır.
+- Kapsam, kapsam dışı alanlar, varsayım ve bağımlılıklar görünürdür.
+- Gereksinimler benzersiz kimlikli, öncelikli ve test edilebilirdir.
+- Süreç, veri, API ve ekran kararları aynı çözüm bağlamında tutarlıdır.
+- Tasarlanan çıktı ile gerçekten çalıştırılmış kanıt birbirinden ayrılır.
+- KPI için formül, baseline, veri kaynağı, sahip ve ölçüm zamanı tanımlanır.
+- Test/UAT sonucu gereksinime bağlanır; açık risk ve karar sahibi belirtilir.
 
-| Mevcut çalışma | Taşınacağı yer | Portföy anlatısı |
+## Kanıt sınıflandırması
+
+| Kanıt türü | Beklenen içerik | Sunum kuralı |
 |---|---|---|
-| SQL sorguları / ödevleri | `02-sql-data-analysis/07-database-sql` | İş sorusu → sorgu → bulgu → öneri |
-| React veya UI projesi | `03-react-ui-prototype/10-application-demo` | Gereksinim → wireframe → çalışan prototip |
-| BA dokümanları | `01-ba-case-study` altındaki ilgili klasör | Problem → analiz → gereksinim → doğrulama |
-| Süreç çizimleri | `05-process-flows` | AS-IS darboğazı → TO-BE iyileştirmesi |
-| Test senaryoları | `09-test-cases-uat` | Gereksinim → senaryo → beklenen sonuç |
+| Çalıştırılmış kanıt | Gerçek istek/yanıt, SQL sonucu veya çalışan arayüz davranışı | Tarih, veri koşulu, beklenen ve gerçekleşen sonuç belirtilir |
+| Tasarım kanıtı | Gereksinim, süreç, veri/API sözleşmesi, wireframe veya test tasarımı | Hedef durum olduğu açıkça belirtilir; canlı sonuç gibi sunulmaz |
+| Analiz kanıtı | İş sorusu, sorgu/model, bulgu yorumu ve önerilen aksiyon | Teknik çıktı iş kararına bağlanır |
+| Yönetişim kanıtı | RACI, risk, karar, change impact, release ve UAT kapısı | Sahip, karar ölçütü ve izleme yöntemi bulunur |
 
 ## Yayın öncesi kontrol
 
@@ -29,8 +32,9 @@
 - Demo varsa kurulum ve ekran görüntüsü mevcut.
 - Yazım ve terminoloji tutarlı.
 
-## Önerilen durum etiketleri
+## Durum ve kanıt etiketleri
 
-- `Taslak`: Yapı oluşturuldu, içerik eksik.
-- `Devam ediyor`: Analiz veya uygulama geliştiriliyor.
-- `Tamamlandı`: Belgeler ve demo doğrulandı.
+- `Tasarım`: Hedef çözüm tanımlandı; uygulama sonucu iddiası yoktur.
+- `Çalıştırıldı`: İlgili teknik davranış kontrollü ortamda doğrulandı.
+- `UAT için hazır`: Gereksinim, test verisi, kabul kriteri ve giriş koşulları tamamlandı.
+- `Karar bekliyor`: Sahibi ve son tarihi belirtilmiş açık karar vardır.
