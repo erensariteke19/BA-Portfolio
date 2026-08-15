@@ -9,14 +9,6 @@
 
 ## Ortak teslim standardı
 
-Her vaka şu sorulara cevap verir:
+Her vaka; problem ve değer hipotezini, kapsam sınırını, paydaş etkisini, ana/alternatif süreci, test edilebilir gereksinimleri, veri/entegrasyon etkisini ve kabul yaklaşımını aynı izlenebilirlik zincirinde ele alır. Açık kararlar sahip ve gerekçeleriyle; riskler azaltma aksiyonlarıyla; testler ilgili gereksinim ve iş kuralıyla ilişkilendirilir.
 
-1. İş problemi ve beklenen değer nedir?
-2. Kapsam ve kapsam dışı nedir?
-3. Ana ve alternatif süreçler nasıl işler?
-4. Gereksinimler ve iş kuralları nelerdir?
-5. User story ve acceptance criteria nasıl doğrulanır?
-6. Veri modeli nasıl etkilenir?
-7. Hangi testler ve açık kararlar gerekir?
-
-Tüm senaryolar eğitim amaçlıdır; gerçek üretim sonucu veya tamamlanmış uygulama iddiası içermez.
+Senaryolar sentetik iş bağlamında hazırlanmış çözüm analizleridir. Tasarım çıktıları üretim sonucu gibi sunulmaz; çalıştırılmış teknik kanıtlar ayrıca işaretlenir.
