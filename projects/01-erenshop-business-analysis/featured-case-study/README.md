@@ -7,9 +7,9 @@ ErenShop müşterileri siparişlerini sistem üzerinden iptal edemediği için d
 **Rol:** İş Analizi Uzman Yardımcısı — Eren Sarıteke  
 **Alan:** E-ticaret / sipariş yönetimi  
 **Yaklaşım:** Gereksinim analizi, AS-IS/TO-BE, user story, kabul kriteri, veri modeli, test ve izlenebilirlik  
-**Durum:** Portföy vaka çalışması — uygulama geliştirme kapsam dışı
+**Kanıt seviyesi:** Hedef çözüm ve teslim tasarımı — üretim sonucu iddiası yoktur
 
-> Bu çalışma eğitim amaçlı, kurgusal bir e-ticaret senaryosudur. İsimler, tarihler ve iş verileri temsili kullanılmıştır.
+> Bu çalışma sentetik verilerle hazırlanmış senaryo tabanlı bir çözüm analizidir. İsimler, tarihler ve iş verileri temsilidir; doküman canlı üretim sonucu değil, kurumsal BA teslim standardını gösterir.
 
 ## İş problemi ve değer önerisi
 
