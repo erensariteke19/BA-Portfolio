@@ -1,7 +1,7 @@
 # Business Analyst İş İlanı Yetkinlik Eşleştirmesi
 
 **Değerlendirme tarihi:** 14 Ağustos 2026  
-**Hedef roller:** Junior Business Analyst, IT Business Analyst, Technical Business Analyst
+**Hedef roller:** İş Analizi Uzman Yardımcısı, IT Business Analyst, Technical Business Analyst
 
 Bu matris, güncel Türkiye ilanlarında tekrar eden beklentileri portföydeki somut kanıtlarla eşleştirir. Amaç anahtar kelime eklemek değil; her yetkinliği incelenebilir bir çıktı üzerinden göstermektir.
 
@@ -23,7 +23,7 @@ Bu matris, güncel Türkiye ilanlarında tekrar eden beklentileri portföydeki s
 | Jira/Confluence, backlog ve Agile | [Agile delivery pack](projects/01-erenshop-business-analysis/featured-case-study/agile-delivery-pack.md) | Araç bağımsız Jira/Confluence örneği |
 | BPMN/UML süreç modelleme | [BPMN/UML süreç spesifikasyonu](projects/01-erenshop-business-analysis/featured-case-study/bpmn-uml-specification.md) | Render edilebilir diyagram + kurallar |
 | API ve sistem entegrasyonu | [System integration analysis](projects/01-erenshop-business-analysis/featured-case-study/system-integration-analysis.md), [API contract](projects/01-erenshop-business-analysis/featured-case-study/api-contract.md) | Hedef çözüm tasarımı |
-| SQL ve veri kalite kontrolü | [İleri SQL analiz paketi](projects/02-sql-data-analysis/advanced-business-analysis.sql), [SQL matrisi](projects/02-sql-data-analysis/SQL-CAPABILITY-MATRIX.md) | Kod + çalıştırılmış CRUD kanıtı |
+| SQL ve veri kalite kontrolü | [İleri SQL analiz paketi](projects/02-sql-data-analysis/advanced-business-analysis.sql), [SQL matrisi](projects/02-sql-data-analysis/SQL-CAPABILITY-MATRIX.md) | Karar odaklı sorgu paketi + API–DB mutabakat kanıtı |
 | UAT ve QA desteği | [UAT/test cases](projects/01-erenshop-business-analysis/featured-case-study/test-cases-uat.md), [release plan](projects/01-erenshop-business-analysis/featured-case-study/release-uat-plan.md) | Tasarlanmış UAT + çalıştırılmış API testleri |
 | Change impact ve SDLC | [Change impact](projects/01-erenshop-business-analysis/featured-case-study/change-impact-analysis.md), [change request](projects/01-erenshop-business-analysis/featured-case-study/change-request.md) | Hazırlanmış yönetişim çıktısı |
 | KPI ve raporlama | [KPI/dashboard specification](projects/01-erenshop-business-analysis/featured-case-study/kpi-dashboard-specification.md) | Veri ve dashboard gereksinimi |
