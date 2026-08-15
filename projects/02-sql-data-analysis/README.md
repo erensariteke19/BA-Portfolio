@@ -8,24 +8,19 @@ Bu vaka çalışması, SQL'i yalnızca veri listelemek için değil; satış per
 |---|---|
 | İş alanı | E-ticaret — ürün, müşteri, sepet, sipariş ve ödeme |
 | Veritabanı | Microsoft SQL Server / ErenShopDB |
-| Veri | Eğitim amacıyla hazırlanmış sentetik veri seti |
+| Veri | Anonim ve sentetik e-ticaret veri seti |
 | Rolüm | İş sorularını tanımlama, sorguları çalıştırma, API–veritabanı tutarlılığını doğrulama ve analiz paketini hazırlama |
 | Teknik bağlam | ErenShop SQL Server şeması ve sentetik e-ticaret verisi |
 
-## Yanıtlanan iş soruları
+## İş karar alanları
 
-1. Satış geliri, sipariş sayısı, ortalama sepet tutarı ve aktif müşteri sayısı nedir?
-2. Aylık gelir ve sipariş adedi nasıl değişmektedir?
-3. Gelir açısından en güçlü kategori ve ürünler hangileridir?
-4. Her kategorinin kendi içindeki en güçlü ürünleri hangileridir?
-5. En değerli müşteriler kimlerdir ve müşteri segmentleri nasıl oluşmaktadır?
-6. Tekrar sipariş veren müşteri oranı nedir?
-7. Sipariş statülerindeki dağılım operasyonel darboğaz gösteriyor mu?
-8. Ödeme başarı oranı ve ödeme yöntemi performansı nedir?
-9. Hangi ürünlerde stok riski vardır ve öncelik sırası ne olmalıdır?
-10. Hiç satılmayan ürünler hangileridir?
-11. Sipariş toplamları, sipariş kalemleri ve ödeme tutarları birbiriyle tutarlı mı?
-12. Yinelenen aktif sepet, geçersiz fiyat/stok veya eksik ilişki gibi veri kalitesi sorunları var mı?
+| Karar alanı | Analiz odağı | Desteklenen aksiyon |
+|---|---|---|
+| Ticari performans | Gelir, sipariş, sepet, dönemsel trend, kategori ve ürün katkısı | Ticari öncelik, kampanya ve ürün portföyü kararı |
+| Müşteri değeri | Harcama, sipariş sıklığı, tekrar satın alma ve segmentasyon | CRM, sadakat ve müşteri koruma aksiyonu |
+| Operasyon | Sipariş durumları, stok riski, satılmayan ürün ve ödeme başarısı | Operasyon kuyruğu, satın alma ve ödeme yöntemi incelemesi |
+| Finansal mutabakat | Sipariş, kalem ve ödeme tutarlarının tutarlılığı | Fark kaydı, kök neden ve düzeltme aksiyonu |
+| Veri kalitesi | Yinelenen sepet, geçersiz değer, eksik ilişki ve referential bütünlük | Veri kalite kuralı, sahiplik ve kontrol periyodu |
 
 ## SQL yetkinlikleri
 
@@ -43,14 +38,14 @@ Bu vaka çalışması, SQL'i yalnızca veri listelemek için değil; satış per
 ## Dosyalar
 
 - [İleri seviye iş analizi sorguları](advanced-business-analysis.sql) — iş, veri kalitesi ve mutabakat odaklı gelişmiş sorgu paketi
-- [SELECT eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
-- [JOIN eğitim sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
+- [SELECT referans sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/04_training_select_queries.sql)
+- [JOIN referans sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/05_training_join_queries.sql)
 - [Raporlama sorguları](../01-erenshop-business-analysis/05-learning-platform/sql/06_training_report_queries.sql)
 - [Tablo oluşturma betiği](../01-erenshop-business-analysis/05-learning-platform/sql/02_create_tables.sql)
 - [Sentetik örnek veri](../01-erenshop-business-analysis/05-learning-platform/sql/03_seed_data.sql)
 - [Veri modeli özeti](../01-erenshop-business-analysis/07-database-sql/DATA-MODEL-OVERVIEW.md)
 
-## Uygulanmış API–SQL doğrulaması
+## API–SQL mutabakat kanıtı
 
 Postman üzerinden bir ürün oluşturuldu, güncellendi ve soft-delete ile pasife alındı. Ardından SQL Server üzerinde kaydın `IsActive = 0` olduğu doğrulandı. Pasif ürünün API tarafından `404 Not Found` ile gizlendiği de kontrol edildi.
 
@@ -70,4 +65,4 @@ Bu sorguların amacı yalnızca sonuç tablosu üretmek değildir. Çıktılar a
 
 ## Şeffaflık notu
 
-Temel ürün CRUD ve soft-delete senaryosu çalıştırılmış ve ekran kanıtlarıyla belgelenmiştir. İleri analiz sorguları mevcut ErenShop şemasına uygun, çalıştırılabilir bir portföy paketi olarak hazırlanmıştır; üretim sonucu veya gerçek şirket verisi iddiası taşımaz.
+API–DB mutabakat senaryosu kontrollü ortamda çalıştırılmış ve ekran kanıtlarıyla belgelenmiştir. İleri analiz sorguları mevcut ErenShop şemasına uygun, karar alanlarıyla ilişkilendirilmiş çalıştırılabilir bir analiz paketidir; üretim sonucu veya gerçek şirket verisi iddiası taşımaz.
