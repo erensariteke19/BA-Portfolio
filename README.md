@@ -4,7 +4,7 @@ Merhaba, ben **Eren Sarıteke**. Operasyonel ve teknik ihtiyaçları açık gere
 
 Bu portföy; iş ihtiyacının tanımlanmasından çözüm kapsamına, süreç ve veri modelinden API/SQL doğrulamasına, UAT ve yayın hazırlığına kadar uzanan iş analizi teslimlerini incelenebilir kanıtlarla sunar. Senaryolar sentetik ve anonimdir; kişisel veya gizli veri içermez.
 
-Güncel Business Analyst ilanlarında aranan SQL, API/entegrasyon, Jira/Confluence, Agile, BPMN/UML, UAT, change impact, KPI ve paydaş yönetimi yetkinliklerinin portföy kanıtlarıyla eşleşmesi için [İş İlanı Yetkinlik Matrisi](JOB-MARKET-ALIGNMENT.md) hazırlanmıştır.
+Bu portföy; gereksinim analizi, süreç modelleme, SQL, API testi, UAT ve paydaş yönetimi gibi iş analistliği yetkinliklerini somut proje çıktılarıyla gösterir. Yetkinliklerin portföydeki karşılıkları [İş Analisti Yetkinlik ve Portföy Kanıtları](JOB-MARKET-ALIGNMENT.md) sayfasında açıklanmıştır.
 
 > **English snapshot:** I translate business needs into traceable requirements, process and integration models, prioritized backlogs, SQL insights, API/UAT test scenarios and measurable release outcomes.
 
