@@ -4,9 +4,9 @@
 
 ErenShop müşterileri siparişlerini sistem üzerinden iptal edemediği için destek ekibine başvurmak zorundaydı. Bu çalışma, uygun durumdaki siparişlerin müşteri tarafından self-servis olarak iptal edilmesini; stokların geri yüklenmesini, gerekiyorsa ödeme iadesinin başlatılmasını ve işlemin izlenebilir şekilde kaydedilmesini tanımlar.
 
-**Rol:** İş Analizi Uzman Yardımcısı — Eren Sarıteke  
-**Alan:** E-ticaret / sipariş yönetimi  
-**Yaklaşım:** Gereksinim analizi, AS-IS/TO-BE, user story, kabul kriteri, veri modeli, test ve izlenebilirlik  
+**Rol:** İş Analisti — Eren Sarıteke<br>
+**Alan:** E-ticaret / sipariş yönetimi<br>
+**Yaklaşım:** Gereksinim analizi, AS-IS/TO-BE, user story, kabul kriteri, veri modeli, test ve izlenebilirlik<br>
 **Kanıt seviyesi:** Hedef çözüm ve teslim tasarımı — üretim sonucu iddiası yoktur
 
 > Bu çalışma sentetik verilerle hazırlanmış senaryo tabanlı bir çözüm analizidir. İsimler, tarihler ve iş verileri temsilidir; doküman canlı üretim sonucu değil, kurumsal BA teslim standardını gösterir.
