@@ -1,7 +1,8 @@
 # Business Analyst İş İlanı Yetkinlik Eşleştirmesi
 
-**Değerlendirme tarihi:** 14 Ağustos 2026  
-**Hedef roller:** İş Analizi Uzman Yardımcısı, IT Business Analyst, Technical Business Analyst
+**Değerlendirme tarihi:** 4 Eylül 2026
+
+**Hedef roller:** İş Analisti, IT Business Analyst, Technical Business Analyst, System Business Analyst
 
 Bu matris, güncel Türkiye ilanlarında tekrar eden beklentileri portföydeki somut kanıtlarla eşleştirir. Amaç anahtar kelime eklemek değil; her yetkinliği incelenebilir bir çıktı üzerinden göstermektir.
 
