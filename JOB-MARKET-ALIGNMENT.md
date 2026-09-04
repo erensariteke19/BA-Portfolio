@@ -1,46 +1,31 @@
-# Business Analyst İş İlanı Yetkinlik Eşleştirmesi
+# İş Analisti Yetkinlik ve Portföy Kanıtları
 
-**Değerlendirme tarihi:** 4 Eylül 2026
-
-**Hedef roller:** İş Analisti, IT Business Analyst, Technical Business Analyst, System Business Analyst
-
-Bu matris, güncel Türkiye ilanlarında tekrar eden beklentileri portföydeki somut kanıtlarla eşleştirir. Amaç anahtar kelime eklemek değil; her yetkinliği incelenebilir bir çıktı üzerinden göstermektir.
-
-## Piyasa sinyalleri
-
-| İlan örneği | Tekrar eden beklentiler |
-|---|---|
-| [Technology Business Analyst](https://tr.linkedin.com/jobs/view/business-analyst-at-gizli-%C5%9Firket-4433317275) | Scope/prioritization, Jira/Confluence, Agile ceremonies, API/integration/data flow, SQL, testing, stakeholder communication |
-| [Coca-Cola İçecek Business Analyst](https://tr.linkedin.com/jobs/view/business-analyst-at-coca-cola-cci-4348360876) | BPMN, UAT planning/execution, training, change impact, KPI, business–technical communication |
-| [Ziraat Teknoloji Business Analyst](https://www.linkedin.com/jobs/view/3265279928) | SQL, Jira/Confluence, Agile, functional design, SDLC documentation |
-| [Junior Business Analyst](https://tr.linkedin.com/jobs/view/junior-business-analyst-at-waternet-su-hizmetleri-4141471071) | SQL sorgulama ve sonuç yorumlama, PMO/BT çalışma disiplini |
-| [Process & Project Management BA](https://tr.linkedin.com/jobs/view/business-analyst-process-project-management-at-autorola-group-%E2%80%A2-t%C3%BCrkiye-4363169079) | SQL veri tutarlılığı, BPMN/UML ve süreç analizi |
+Bu sayfa, iş analizi yetkinliklerimi portföyde incelenebilen proje çıktılarıyla eşleştirir. Amaç yalnızca araç veya yöntem adı sıralamak değil; bir iş ihtiyacını analizden doğrulamaya kadar nasıl ele aldığımı göstermektir.
 
 ## Yetkinlik–kanıt matrisi
 
-| İlan yetkinliği | Portföy kanıtı | Kanıt seviyesi |
+| Yetkinlik alanı | Uyguladığım yaklaşım | İncelenebilir portföy kanıtı |
 |---|---|---|
-| Requirement elicitation ve scope | [Business case](projects/01-erenshop-business-analysis/featured-case-study/business-case.md), [requirements](projects/01-erenshop-business-analysis/featured-case-study/requirements.md) | Hazırlanmış çıktı |
-| Jira/Confluence, backlog ve Agile | [Agile delivery pack](projects/01-erenshop-business-analysis/featured-case-study/agile-delivery-pack.md) | Araç bağımsız Jira/Confluence örneği |
-| BPMN/UML süreç modelleme | [BPMN/UML süreç spesifikasyonu](projects/01-erenshop-business-analysis/featured-case-study/bpmn-uml-specification.md) | Render edilebilir diyagram + kurallar |
-| API ve sistem entegrasyonu | [System integration analysis](projects/01-erenshop-business-analysis/featured-case-study/system-integration-analysis.md), [API contract](projects/01-erenshop-business-analysis/featured-case-study/api-contract.md) | Hedef çözüm tasarımı |
-| SQL ve veri kalite kontrolü | [İleri SQL analiz paketi](projects/02-sql-data-analysis/advanced-business-analysis.sql), [SQL matrisi](projects/02-sql-data-analysis/SQL-CAPABILITY-MATRIX.md) | Karar odaklı sorgu paketi + API–DB mutabakat kanıtı |
-| UAT ve QA desteği | [UAT/test cases](projects/01-erenshop-business-analysis/featured-case-study/test-cases-uat.md), [release plan](projects/01-erenshop-business-analysis/featured-case-study/release-uat-plan.md) | Tasarlanmış UAT + çalıştırılmış API testleri |
-| Change impact ve SDLC | [Change impact](projects/01-erenshop-business-analysis/featured-case-study/change-impact-analysis.md), [change request](projects/01-erenshop-business-analysis/featured-case-study/change-request.md) | Hazırlanmış yönetişim çıktısı |
-| KPI ve raporlama | [KPI/dashboard specification](projects/01-erenshop-business-analysis/featured-case-study/kpi-dashboard-specification.md) | Veri ve dashboard gereksinimi |
-| Stakeholder management | [Stakeholder/RACI](projects/01-erenshop-business-analysis/featured-case-study/stakeholder-raci.md) | Paydaş ve iletişim planı |
-| UI/functional design | [UI functional specification](projects/03-react-ui-prototype/UI-SPECIFICATION.md) | Wireframe + durum/erişilebilirlik kuralları |
+| İş ihtiyacı ve kapsam analizi | Problem, hedef, kapsam, kapsam dışı alanlar, varsayımlar ve başarı ölçütlerini tanımlama | [Business case](projects/01-erenshop-business-analysis/featured-case-study/business-case.md) · [Gereksinimler](projects/01-erenshop-business-analysis/featured-case-study/requirements.md) |
+| Gereksinim yönetimi | Fonksiyonel ve fonksiyonel olmayan gereksinimleri; iş kurallarını, user story'leri ve kabul kriterlerini yapılandırma | [User story ve kabul kriterleri](projects/01-erenshop-business-analysis/featured-case-study/user-stories.md) · [İzlenebilirlik matrisi](projects/01-erenshop-business-analysis/featured-case-study/traceability-matrix.md) |
+| Süreç analizi ve modelleme | Mevcut ve hedef süreci, roller ile karar noktalarını AS-IS/TO-BE ve BPMN/UML yaklaşımıyla modelleme | [BPMN/UML süreç spesifikasyonu](projects/01-erenshop-business-analysis/featured-case-study/bpmn-uml-specification.md) |
+| Paydaş ve sorumluluk yönetimi | Paydaş etkisini, karar sorumluluklarını ve iletişim ihtiyacını belirleme | [Stakeholder ve RACI analizi](projects/01-erenshop-business-analysis/featured-case-study/stakeholder-raci.md) |
+| Sistem ve entegrasyon analizi | Servisler arasındaki veri akışını, API davranışını, hata senaryolarını ve sistem sınırlarını tanımlama | [Sistem entegrasyon analizi](projects/01-erenshop-business-analysis/featured-case-study/system-integration-analysis.md) · [API sözleşmesi](projects/01-erenshop-business-analysis/featured-case-study/api-contract.md) |
+| Veri analizi ve SQL | İş sorularını sorgulara dönüştürme; KPI, trend, segmentasyon, veri kalitesi ve mutabakat kontrolleri oluşturma | [SQL iş analizi paketi](projects/02-sql-data-analysis/advanced-business-analysis.sql) · [SQL yetkinlik matrisi](projects/02-sql-data-analysis/SQL-CAPABILITY-MATRIX.md) |
+| API testi ve veri doğrulama | Pozitif/negatif API senaryolarını çalıştırma ve API sonuçlarını SQL Server kayıtlarıyla karşılaştırma | [API ve SQL test sonuçları](projects/01-erenshop-business-analysis/09-test-cases-uat/API-SQL-TEST-RESULTS.md) |
+| Test, UAT ve izlenebilirlik | Gereksinimleri test senaryolarına bağlama; UAT kabul koşulları ile yayın karar noktalarını tanımlama | [Test ve UAT senaryoları](projects/01-erenshop-business-analysis/featured-case-study/test-cases-uat.md) · [Release ve UAT planı](projects/01-erenshop-business-analysis/featured-case-study/release-uat-plan.md) |
+| Değişiklik ve etki analizi | Talebin süreç, veri, entegrasyon, kullanıcı ve operasyon üzerindeki etkilerini değerlendirme | [Change impact analizi](projects/01-erenshop-business-analysis/featured-case-study/change-impact-analysis.md) · [Change request](projects/01-erenshop-business-analysis/featured-case-study/change-request.md) |
+| KPI ve raporlama gereksinimleri | Ölçüm tanımı, veri kaynağı, hesaplama mantığı, sahiplik ve izleme sıklığını açıklama | [KPI ve dashboard spesifikasyonu](projects/01-erenshop-business-analysis/featured-case-study/kpi-dashboard-specification.md) |
+| Fonksiyonel ekran tasarımı | Gereksinimleri ekran davranışlarına, durumlara, validasyonlara ve erişilebilirlik kurallarına dönüştürme | [UI fonksiyonel spesifikasyonu](projects/03-react-ui-prototype/UI-SPECIFICATION.md) |
+| Agile teslimat ve backlog | İş ihtiyacını epic, user story, kabul kriteri, öncelik ve bağımlılık yapısında teslimata hazırlama | [Agile teslimat paketi](projects/01-erenshop-business-analysis/featured-case-study/agile-delivery-pack.md) |
 
-## Dürüst kanıt sınırı
+## Kanıtların kapsamı
 
-- ErenShop ürün API'sinde CRUD ve soft-delete akışı Postman/SQL ile çalıştırılmıştır.
-- İleri SQL paketi mevcut şemaya uygun portföy sorgularıdır; üretim veri sonucu iddiası taşımaz.
-- Sipariş iptali entegrasyon, BPMN, Jira ve dashboard çıktıları hedef çözüm tasarımıdır; gerçek şirkette canlıya alınmış gibi sunulmaz.
-- Jira/Confluence bilgisi, araç alanlarına uygun hazırlanmış artifact yapısıyla gösterilir; kurumsal Jira kullanım deneyimi iddia edilmez.
+- ErenShop ürün API'sindeki listeleme, arama, detay, oluşturma, güncelleme ve pasife alma akışları Postman ile çalıştırılmış; veritabanı etkileri SQL Server üzerinden kontrol edilmiştir.
+- SQL çalışmaları portföyün mevcut veri modeline göre hazırlanmış, iş sorusu ve karar bağlantısı açıklanmış sorgulardır.
+- Sipariş iptali vaka çalışmasındaki süreç, entegrasyon, backlog, KPI ve yayın çıktıları sentetik bir iş senaryosu için hazırlanmış hedef çözüm tasarımıdır.
+- Portföyde gerçek iş deneyimi ile senaryo tabanlı vaka çalışmaları birbirinden açık biçimde ayrılır; üretim ortamında uygulanmamış sonuçlar uygulanmış gibi sunulmaz.
 
-## Sonraki gelişim hedefleri
+## Gelişim odağı
 
-1. Bir Jira sandbox üzerinde epic/story/bug akışını ekran kanıtıyla uygulamak.
-2. Power BI veya Excel'de SQL KPI'larını gerçek dashboard dosyasına dönüştürmek.
-3. Postman testlerini Newman ile otomatik çalıştırıp HTML/JUnit raporu üretmek.
-4. İngilizce requirement ve stakeholder sunumu hazırlamak.
+Portföy; Power BI/Excel dashboard uygulaması, otomatik API test raporlaması ve İngilizce analiz teslimleri gibi yeni kanıtlarla geliştirilmeye devam edecektir.
